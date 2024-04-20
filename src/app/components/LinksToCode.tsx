@@ -9,10 +9,9 @@ function LinksToCode() {
             </button>
           </a>
         </div>
-
         <div className="lg:transform lg:hover:scale-110 lg:transition lg:duration-500 lg:ease-in-ou">
           <a href="/cv.pdf" download>
-            <button className="m-2 bg-red-400 text-white px-4 py-2 rounded hover:bg-red-600 text-2xl">
+            <button className="m-2 bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-600 text-2xl">
               Download CV
             </button>
           </a>
