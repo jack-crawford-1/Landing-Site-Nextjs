@@ -1,7 +1,7 @@
 import React from 'react'
 import { ColourfulParagraph } from './ColourfulParagraph'
 import LinksToCode from '../LinksToCode'
-import Showcase from '../../showcase/Showcase'
+import Showcase from '../showcase/Showcase'
 
 function AboutText() {
   return (
@@ -11,6 +11,7 @@ function AboutText() {
           <ColourfulParagraph>Hi, I&apos;m Jack,</ColourfulParagraph>
           <ColourfulParagraph>Web Developer.</ColourfulParagraph>
         </div>
+        <Showcase />
         <div className="m-8 lg:transform lg:hover:scale-110 lg:transition lg:duration-500 lg:ease-in-out">
           <LinksToCode />
         </div>
