@@ -1,9 +1,11 @@
 'use client'
 
 import React, { useState } from 'react'
+
 import AboutText from './components/aboutText/AboutText'
 import Contact from './components/Contact'
 import Toggle from './components/Toggle'
+import Showcase from './showcase/Showcase'
 
 function Home() {
   const [backgroundColor, setBackgroundColor] = useState('')
@@ -18,7 +20,12 @@ function Home() {
       <div className="z-10 w-full max-w-5xl items-center justify-between font-sans text-7xl lg:flex font-extrabold ">
         <AboutText />
       </div>
-      <Contact />
+      <div className="w-full max-w-5xl items-center justify-between lg:flex font-extrabold ">
+        {/* <Showcase /> */}
+      </div>
+      <div className="z-10 w-full max-w-5xl items-center justify-between font-sans text-7xl lg:flex font-extrabold ">
+        <Contact />
+      </div>
     </main>
   )
 }
