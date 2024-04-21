@@ -12,18 +12,13 @@ function Home() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-center p-24 bg-black text-white ${backgroundColor}`}
+      className={`flex min-h-screen flex-col items-center justify-center p-10 bg-black text-white ${backgroundColor}`}
     >
-      {/* <span className="absolute top-0 right-0 mt-4 mr-4 p-8">
-        <Toggle setBackgroundColor={setBackgroundColor} />
-      </span> */}
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-sans text-7xl lg:flex font-extrabold ">
+      <div className="z-10 w-full max-w-4xl items-center justify-between text-5xl md:text-7xl lg:flex font-extrabold ">
         <AboutText />
       </div>
-      <div className="w-full max-w-5xl items-center justify-between lg:flex font-extrabold ">
-        {/* <Showcase /> */}
-      </div>
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-sans text-7xl lg:flex font-extrabold ">
+      <div className="w-full max-w-5xl items-center justify-between lg:flex font-extrabold "></div>
+      <div className="z-10 w-full max-w-5xl items-center justify-between text-7xl lg:flex font-extrabold ">
         <Contact />
       </div>
     </main>

@@ -3,7 +3,7 @@ import React from 'react'
 const Showcase = () => {
   return (
     <div className="text-sm mb-10">
-      <div className="inline-flex space-x-4 md:space-x-8 lg:space-x-12 m-2 text-xl">
+      <div className="md:text-xl text-sm">
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -41,7 +41,7 @@ const Showcase = () => {
           className="transition duration-300 ease-in-out"
         >
           <button className="text-white px-4 py-2 rounded transform hover:scale-110">
-            NASA
+            NASA API
           </button>
         </a>
         <a
