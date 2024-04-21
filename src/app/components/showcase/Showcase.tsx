@@ -44,6 +44,16 @@ const Showcase = () => {
             NASA
           </button>
         </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://community-garden.pushed.nz/"
+          className="transition duration-300 ease-in-out"
+        >
+          <button className="text-white px-4 py-2 rounded transform hover:scale-110">
+            Community Garden
+          </button>
+        </a>
       </div>
     </div>
   )
