@@ -45,7 +45,7 @@ const Showcase = () => {
             Todo Fullstack
           </button>
         </a>
-        <a
+        {/* <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://nasa.pushed.nz/"
@@ -54,7 +54,7 @@ const Showcase = () => {
           <button className="text-white px-4 py-2 rounded transform hover:scale-110">
             NASA API
           </button>
-        </a>
+        </a> */}
       </div>
     </div>
   )
