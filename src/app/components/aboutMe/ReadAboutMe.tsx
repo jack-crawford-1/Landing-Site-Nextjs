@@ -23,10 +23,10 @@ function ReadAboutMe() {
             Hide About
           </button>
           <p className="m-5">
-            Hi! I'm Jack Crawford, a full-stack developer based in Wellington,
-            New Zealand. My recent graduation from Dev Academy Aotearoa has
-            marked a significant milestone in my transition from a seasoned
-            account manager to full stack developer.
+            Hi! I&apos;m Jack Crawford, a full-stack developer based in
+            Wellington, New Zealand. My recent graduation from Dev Academy
+            Aotearoa has marked a significant milestone in my transition from a
+            seasoned account manager to full stack developer.
           </p>
           <p className="m-5">
             As someone who has thrived in dynamic account management roles,
@@ -36,9 +36,9 @@ function ReadAboutMe() {
             competencies in JavaScript, React, TypeScript, Express.js, and more.
           </p>
           <p className="m-5">
-            I’m fascinated by how technology can solve complex problems and am
-            committed to crafting code that&apos;s not only functional but also
-            user-friendly and accessible. In search of a collaborative,
+            I&apos;m fascinated by how technology can solve complex problems and
+            am committed to crafting code that&apos;s not only functional but
+            also user-friendly and accessible. In search of a collaborative,
             innovative environment that values agile practices and
             out-of-the-box thinking, I&apos;m eager to bring my unique
             perspective and dedicated work ethic to a team as passionate about
