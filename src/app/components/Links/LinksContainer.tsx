@@ -1,7 +1,7 @@
 import Email from './Email'
 import Github from './Github'
 import CV from './CV'
-import ReadAboutMe from '../aboutMe/ReadAboutMe'
+// import ReadAboutMe from '../aboutMe/ReadAboutMe'
 
 function LinksContainer() {
   return (
@@ -15,9 +15,9 @@ function LinksContainer() {
       <div className="md:ml-5 transform m-2 hover:scale-110 text-white px-2 py-2 rounded hover:border text-x">
         <Email />
       </div>
-      <div className=" md:ml-5 m-2 text-white px-2 py-2 font-bold rounded hover:border text-x">
+      {/* <div className=" md:ml-5 m-2 text-white px-2 py-2 font-bold rounded hover:border text-x">
         <ReadAboutMe />
-      </div>
+      </div> */}
     </div>
   )
 }
