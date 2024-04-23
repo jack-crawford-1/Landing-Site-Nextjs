@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Showcase = () => {
+const ProjectsList = () => {
   return (
     <div className="text-sm mb-10">
       <div className="md:text-xl text-sm">
@@ -60,4 +60,4 @@ const Showcase = () => {
   )
 }
 
-export default Showcase
+export default ProjectsList

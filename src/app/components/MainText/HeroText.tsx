@@ -1,7 +1,7 @@
 import React from 'react'
 import { ColourfulParagraph } from './ColourfulParagraph'
 
-function AboutText() {
+function HeroText() {
   return (
     <>
       <div>
@@ -14,4 +14,4 @@ function AboutText() {
   )
 }
 
-export default AboutText
+export default HeroText
