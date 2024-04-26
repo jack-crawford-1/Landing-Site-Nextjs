@@ -3,7 +3,7 @@
 import HeroText from './components/MainText/HeroText'
 import LinksContainer from './components/Links/LinksContainer'
 import ProjectsList from './components/projects/ProjectsList'
-import ReadAboutMe from './components/aboutMe/ReadAboutMe'
+import './globals.css'
 
 function Home() {
   return (
