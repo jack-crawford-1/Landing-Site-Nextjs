@@ -8,18 +8,14 @@ import TodoProject from '@/app/components/projects/TodoProject'
 import NasaProject from '@/app/components/projects/NasaProject'
 import HeaderArea from '@/app/components/MainText/HeaderArea'
 import LinksContainer from '@/app/components/Links/LinksContainer'
-import Email from '@/app/components/Links/Email'
-import CV from '@/app/components/Links/CV'
+import Link from 'next/link'
 
 function Projects() {
   return (
     <>
       <div className="bg-black border-4 border-white">
-        <div className="mb-1 md:mb-0 content-center">
+        <div className="mb-1  content-center">
           <HeaderArea />
-        </div>
-        <div className="text-white m-2 p-5 md:invisible">
-          <Email />
         </div>
         <div className="md:flex md:flex-row md:flex-wrap  md:p-2 md:justify-center bg-black">
           <CommunityGarden />
@@ -28,7 +24,7 @@ function Projects() {
           <TodoProject />
           <NasaProject />
         </div>
-        <div className=" w-full max-w-5xl items-center md:ml-10 md:pl-10 font-bold invisible md:visible m-0">
+        <div className=" w-full max-w-5xl items-center md:ml-10 md:pl-10 font-bold">
           <LinksContainer />
         </div>
       </div>
