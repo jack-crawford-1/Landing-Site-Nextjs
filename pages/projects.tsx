@@ -14,10 +14,10 @@ function Projects() {
   return (
     <>
       <div className="bg-black border-4 border-white">
-        <div className="mb-1  content-center">
+        <div className="mb-1 content-center">
           <HeaderArea />
         </div>
-        <div className="md:flex md:flex-row md:flex-wrap  md:p-2 md:justify-center bg-black">
+        <div className="md:flex md:flex-row md:flex-wrap md:justify-center bg-black">
           <CommunityGarden />
           <Weather />
           <PokemonProject />
