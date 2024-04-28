@@ -1,10 +1,39 @@
 'use client'
 
-function projects() {
+import '../src/app/globals.css'
+import CommunityGarden from '../src/app/components/projects/CommunityGarden'
+import Weather from '@/app/components/projects/Weather'
+import PokemonProject from '@/app/components/projects/PokemonProject'
+import TodoProject from '@/app/components/projects/TodoProject'
+import NasaProject from '@/app/components/projects/NasaProject'
+import HeaderArea from '@/app/components/MainText/HeaderArea'
+import LinksContainer from '@/app/components/Links/LinksContainer'
+import Email from '@/app/components/Links/Email'
+import CV from '@/app/components/Links/CV'
+
+function Projects() {
   return (
-    <div className="text-3xl">
-      <h1>projects page</h1>
-    </div>
+    <>
+      <div className="bg-black border-4 border-white">
+        <div className="mb-1 md:mb-0 content-center">
+          <HeaderArea />
+        </div>
+        <div className="text-white m-2 p-5 md:invisible">
+          <Email />
+        </div>
+        <div className="md:flex md:flex-row md:flex-wrap  md:p-2 md:justify-center bg-black">
+          <CommunityGarden />
+          <Weather />
+          <PokemonProject />
+          <TodoProject />
+          <NasaProject />
+        </div>
+        <div className=" w-full max-w-5xl items-center md:ml-10 md:pl-10 font-bold invisible md:visible m-0">
+          <LinksContainer />
+        </div>
+      </div>
+    </>
   )
 }
-export default projects
+
+export default Projects

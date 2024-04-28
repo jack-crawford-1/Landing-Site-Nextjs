@@ -2,9 +2,10 @@ import React from 'react'
 
 const ProjectsList = () => {
   return (
-    <div className="text-sm mb-10">
-      <div className="md:text-xl text-sm">
-        <span className="text-gray-500">Projects:</span>
+    <div className="md:text-xl text-sm flex flex-col ">
+      <span className="text-gray-500">Deployed projects:</span>
+      <div className="text-sm mb-10 flex flex-row flex-wrap justify-start">
+        {/* <span className="text-gray-500">Deployed projects:</span> */}
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -45,16 +46,6 @@ const ProjectsList = () => {
             Todo Fullstack
           </button>
         </a>
-        {/* <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://nasa.pushed.nz/"
-          className="transition duration-300 ease-in-out"
-        >
-          <button className="text-white px-4 py-2 rounded transform hover:scale-110">
-            NASA API
-          </button>
-        </a> */}
       </div>
     </div>
   )
