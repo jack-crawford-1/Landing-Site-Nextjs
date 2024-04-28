@@ -6,7 +6,7 @@ function Weather() {
   return (
     <div className="container mx-auto p-6 bg-gray-800 min-w-3/4 md:w-2/5 md:rounded-lg border-4 md:m-5">
       <div className="flex flex-row justify-between items-center  w-fit">
-        <div className="flex-none m-1 mr-2 hover:scale-110 hover:duration-500">
+        <div className="m-0 mr-2">
           <h2 className="text-2xl text-white m-2 hover:scale-110 hover:duration-500 ease-in-out">
             <a
               target="_blank"
@@ -14,7 +14,7 @@ function Weather() {
               href="https://weather-api.pushed.nz/"
               className="transition duration-300 ease-in-out"
             >
-              <button className="text-white px-4 py-2 rounded transform hover:scale-110">
+              <button className="text-white  hover:text-green-400 px-4 py-2 rounded transform hover:scale-110 inline-flex">
                 Weather API
               </button>
             </a>
@@ -22,7 +22,7 @@ function Weather() {
           <div className="hover:scale-110 transform hover:duration-700 ease-in-out mb-5 rounded">
             <Image
               src="/w.png"
-              alt="Community Garden Project"
+              alt="Weather API  Project"
               width={250}
               height={0}
               className="h-fit"
@@ -55,7 +55,7 @@ function Weather() {
             Rest API
           </li>
           <a
-            href="https://github.com/jack-crawford-1/community-garden"
+            href="https://github.com/jack-crawford-1/weather-api"
             target="_blank"
             className="m-1 content-center justify-center hover:scale-110 transform hover:duration-700 ease-in-out mb-5 rounded"
           >

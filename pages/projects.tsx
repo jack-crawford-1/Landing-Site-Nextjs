@@ -9,6 +9,7 @@ import NasaProject from '@/app/components/projects/NasaProject'
 import HeaderArea from '@/app/components/MainText/HeaderArea'
 import LinksContainer from '@/app/components/Links/LinksContainer'
 import Link from 'next/link'
+import TeamGroup from '@/app/components/projects/TeamGroup'
 
 function Projects() {
   return (
@@ -23,6 +24,7 @@ function Projects() {
           <PokemonProject />
           <TodoProject />
           <NasaProject />
+          <TeamGroup />
         </div>
         <div className=" w-full max-w-5xl items-center md:ml-10 md:pl-10 font-bold">
           <LinksContainer />
