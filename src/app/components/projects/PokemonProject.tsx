@@ -7,15 +7,6 @@ function PokemonProject() {
     <div className="container mx-auto p-6 bg-gray-800 min-w-3/4 md:w-2/5 md:rounded-lg border-4 md:m-5">
       <div className="flex flex-row justify-between items-center  w-fit">
         <div className="flex-none m-1 mr-2 hover:scale-110 hover:duration-500">
-          <Image
-            src="/pokemon-project.png"
-            alt="Community Garden Project"
-            width={150}
-            height={150}
-            className="h-fit"
-          />
-        </div>
-        <div className="flex-1">
           <h2 className="text-2xl text-white m-2 hover:scale-110 hover:duration-500 ease-in-out">
             <a
               target="_blank"
@@ -28,6 +19,17 @@ function PokemonProject() {
               </button>
             </a>
           </h2>
+          <div className="hover:scale-110 transform hover:duration-700 ease-in-out mb-5 rounded">
+            <Image
+              src="/pokemon-project.png"
+              alt="Community Garden Project"
+              width={250}
+              height={0}
+              className="h-fit"
+            />
+          </div>
+        </div>
+        <div className="flex-1">
           <p className="text-sm text-white m-2">
             This app allows users to view detailed information on their favorite
             Pokemon. Using React Router and the Pokemon API.
