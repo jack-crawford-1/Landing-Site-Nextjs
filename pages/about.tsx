@@ -2,7 +2,7 @@
 
 import '../src/app/globals.css'
 
-function about() {
+function aboutPage() {
   return (
     <div className="p-10 font-mono">
       <p className="m-5">
@@ -30,4 +30,4 @@ function about() {
   )
 }
 
-export default about
+export default aboutPage
