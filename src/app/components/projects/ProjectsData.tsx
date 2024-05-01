@@ -5,7 +5,7 @@ export const projectsData = {
     imageSrc: '/w.png',
     altText: 'Weather API Project',
     description:
-      'Allows users to see accurate weather forecasts, including current conditions, temperature, and wind data, by harnessing the power of external weather APIs.',
+      'Allows users to see weather forecasts, including current conditions, temperature, and wind data. This project was a chance to practice using external APIs and deploying a live site with included dotenv files. I based the location on my hometown of Wellington, New Zealand and used the MeteoSource API to source the data.',
     technologies: [
       'React',
       'Express',
@@ -21,7 +21,7 @@ export const projectsData = {
     imageSrc: '/cg1.png',
     altText: 'Community Garden Project',
     description:
-      'The Garden App is a dynamic full-stack application designed to allow users to find, share, and manage green spaces, integrating geolocation and secure user interactions',
+      'This was a personal project with the idea of being a full-stack application that allows users to find, share, and manage green spaces or community gardens. This was built during bootcamp as a solo project allowing me to practice full-stack development including authentication and database management, as well as integrating external APIs for location and information, and mapping services from LeafletJS.',
     technologies: [
       'React',
       'Express',
@@ -42,7 +42,7 @@ export const projectsData = {
     imageSrc: '/todo-project.png',
     altText: 'Todo App Project',
     description:
-      ' The Todo app enables the creation, updating, and tracking of to-do items in a full-stack application with database integration.',
+      ' The Todo app allow for full CRUD operations on a database with user authentication and protected routes. This was my first time using auth0 for authentication and was a great opportunity to practice full-stack development with React and Express. The app wil show only todos for the specific user that is logged in.',
     technologies: [
       'React',
       'Express',
@@ -56,11 +56,11 @@ export const projectsData = {
   },
   NasaAPI: {
     projectName: 'Nasa API',
-    projectLink: 'https://nasa-api.pushed.nz/',
+    projectLink: '',
     imageSrc: '/nasa-img.png',
     altText: 'Nasa API Project',
     description:
-      'This app allows users to view the Image Of The Day sourced from the NASA API with React and TypeScript.',
+      '(NOT CURRENTLY DEPLOYED) This app allows users to view the Image Of The Day sourced from the NASA API with React and TypeScript. It was a fun way to practice using external APIs and a good excuse to look at pictures of space.',
     technologies: [
       'React',
       'Express',
@@ -78,7 +78,7 @@ export const projectsData = {
     imageSrc: '/pokemon-project.png',
     altText: 'Pokemon Project',
     description:
-      'This app allows users to view detailed information on their favorite Pokemon. Using React Router and the Pokemon API.',
+      'This app allows users to view detailed information on their favorite Pokemon. Using React Router and the Pokemon API and deployed through Vercel, this was an extension of a challenge in class to practice using external APIs and routing in React.',
     technologies: [
       'React',
       'Express',
@@ -94,7 +94,7 @@ export const projectsData = {
     imageSrc: '/ow.png',
     altText: 'Group Project',
     description:
-      'This was our final group project, a weather app that allows users to find activities and events for a specific location based on the weather forecast. This was build over 6 days with a team of 4 developers',
+      'This was our final group project during bootcamp, a weather app that allows users to find activities and events for a specific location based on the weather forecast. This was build over 5 days with a team of 4 developers and was a great opportunity to practice working in an agiile environment based on real-world conditions where we problem solved as a group and worked on a shared codebase using git and GitHub',
     technologies: [
       'React',
       'Express',

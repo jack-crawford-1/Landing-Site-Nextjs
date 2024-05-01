@@ -13,11 +13,11 @@ function ProjectsPage() {
         <HeaderArea />
         <div className="md:flex md:flex-row md:flex-wrap md:justify-center bg-black">
           <ProjectCard {...projectsData.CommunityGarden} />
+          <ProjectCard {...projectsData.GroupProject} />
           <ProjectCard {...projectsData.WeatherAPI} />
           <ProjectCard {...projectsData.TodoApp} />
           <ProjectCard {...projectsData.PokemonAPI} />
           <ProjectCard {...projectsData.NasaAPI} />
-          <ProjectCard {...projectsData.GroupProject} />
         </div>
         <div className=" w-full max-w-5xl items-center md:ml-10 md:pl-10 font-bold">
           <ProjectsLinksContainer />
