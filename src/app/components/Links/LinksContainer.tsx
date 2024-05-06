@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 function LinksContainer() {
   return (
-    <div className="flex md:flex-row md:w-screen flex-col items-center md:p-10 m-1 text-2xl">
+    <div className="flex md:flex-row md:w-screen flex-col items-center md:p-10 m-1 text-xl">
       <div className="transform hover:scale-110 ">
         <Github />
       </div>
