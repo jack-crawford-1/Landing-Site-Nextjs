@@ -1,7 +1,7 @@
 'use client'
 
-import '../src/app/globals.css'
-import ProjectCard from '../src/app/components/projects/ProjectCard'
+import '../../src/app/globals.css'
+import ProjectCard from '../../src/app/components/projects/ProjectCard'
 import { projectsData } from '@/app/components/projects/ProjectsData'
 import HeaderArea from '@/app/components/MainText/HeaderArea'
 import ProjectsLinksContainer from '@/app/components/Links/ProjectsLinksContainer'

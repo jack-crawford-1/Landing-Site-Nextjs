@@ -1,6 +1,6 @@
 'use client'
 
-import '../src/app/globals.css'
+import '../../src/app/globals.css'
 
 function aboutPage() {
   return (

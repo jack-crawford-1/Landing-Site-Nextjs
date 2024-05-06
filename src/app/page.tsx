@@ -9,7 +9,7 @@ function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-center p-10 bg-black text-white `}
     >
-      <div className="w-full max-w-4xl items-center justify-between text-6xl md:text-8xl lg:flex font-extrabold ">
+      <div className="w-full max-w-4xl items-center justify-between text-7xl md:text-9xl lg:flex font-extrabold pl-10">
         <HeroText />
       </div>
       <div className=" w-full max-w-5xl items-center md:ml-10 md:pl-10 font-bold">
