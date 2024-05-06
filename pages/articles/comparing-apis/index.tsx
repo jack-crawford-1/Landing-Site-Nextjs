@@ -18,16 +18,17 @@ function ComparingApis() {
           <div className="p-3">
             <p className="m-3">
               In the vast landscape of React development, fetching data from
-              APIs is a cornerstone of modern web applications. Whether you're
-              building a simple blog or a complex enterprise-level application,
-              the choice of how to retrieve data can significantly impact your
-              project's architecture, performance, and maintainability.
+              APIs is a cornerstone of modern web applications. Whether
+              you&apos;re building a simple blog or a complex enterprise-level
+              application, the choice of how to retrieve data can significantly
+              impact your project&apos;s architecture, performance, and
+              maintainability.
             </p>
           </div>
           <div>
             <div className="p-3">
               <h2 className="font-bold m-2 text-2xl">
-                React Query's useQuery Hook
+                React Query&apos;s useQuery Hook
               </h2>
 
               <p className="m-3">
@@ -48,8 +49,8 @@ function ComparingApis() {
               </li>
               <li className="m-2">
                 <span className="font-semibold">Background Data Fetching:</span>
-                This feature keeps your application's data up to date without
-                significant user interface blockage, enhancing the user
+                This feature keeps your application&apos;s data up to date
+                without significant user interface blockage, enhancing the user
                 experience.
               </li>
               <li className="m-2">
@@ -67,7 +68,7 @@ function ComparingApis() {
 
             <p className="m-3">
               Axios is a promise-based HTTP client that works both in the
-              browser and in Node.js environments. It's known for its
+              browser and in Node.js environments. It&apos;s known for its
               easy-to-use API and broad set of features.
             </p>
             <AxiosCode />
@@ -84,13 +85,13 @@ function ComparingApis() {
             <h2 className="font-bold m-2 text-2xl">Conclusion </h2>
             <p className="m-3">
               The choice between useQuery, Axios, and Fetch will largely depend
-              on your specific needs. If you're looking for a robust solution
-              with advanced features like caching and automatic updating, React
-              Query is an excellent choice. For scenarios where you need
-              advanced HTTP features like request cancellation or progress
-              tracking, Axios will serve you well. However, if simplicity and
-              minimal dependencies are paramount, the Fetch API offers a clean
-              and efficient solution.
+              on your specific needs. If you&apos;re looking for a robust
+              solution with advanced features like caching and automatic
+              updating, React Query is an excellent choice. For scenarios where
+              you need advanced HTTP features like request cancellation or
+              progress tracking, Axios will serve you well. However, if
+              simplicity and minimal dependencies are paramount, the Fetch API
+              offers a clean and efficient solution.
             </p>
           </div>
         </div>
