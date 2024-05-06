@@ -1,9 +1,8 @@
 'use client'
 
 import '../../src/app/globals.css'
-import ArticlesCard from '../articles/articlesData/articlesCard'
-import { articlesData } from '../articles/articlesData/articlesData'
-import HeaderArea from '@/app/components/MainText/HeaderArea'
+import ArticlesCard from '../../src/app/components/articlesData/articlesCard'
+import { articlesData } from '../../src/app/components/articlesData/articlesData'
 import ProjectsLinksContainer from '@/app/components/Links/ProjectsLinksContainer'
 
 function ArticlesHome() {
