@@ -1,5 +1,5 @@
-export const articlesData = {
-  ComparingAPIS: {
+function articlesData() {
+  const ComparingAPIS = {
     projectName: 'Comparing APis',
     projectLink: '/articles/comparing-apis',
     imageSrc: '/axios.png',
@@ -7,8 +7,8 @@ export const articlesData = {
     description:
       'Comparing Axios with Fetch and Superagent. This is a long description to test the layout of the card. I am going to keep typing until I reach the end of the card.',
     date: '6-May-2024',
-  },
-  ReactState: {
+  }
+  const ReactState = {
     projectName: 'Using State in React',
     projectLink: '/articles/comparing-apis',
     imageSrc: '/github-logo.png',
@@ -16,8 +16,8 @@ export const articlesData = {
     description:
       'Using State in React with Hooks and Classes. This is a long description to test the layout of the card. I am going to keep typing until I reach the end of the card.',
     date: '6-May-2024',
-  },
-  NextJS: {
+  }
+  const NextJS = {
     projectName: 'Building with NextJS',
     projectLink: '/articles/comparing-apis',
     imageSrc: '/white-arrow.png',
@@ -25,8 +25,8 @@ export const articlesData = {
     description:
       'Building with NextJS and Server Side Rendering. This is a long description to test the layout of the card. I am going to keep typing until I reach the end of the card.',
     date: '6-May-2024',
-  },
-  TailWind: {
+  }
+  const TailWind = {
     projectName: 'Styling with Tailwind',
     projectLink: '/articles/comparing-apis',
     imageSrc: '/sun.png',
@@ -34,5 +34,14 @@ export const articlesData = {
     description:
       'Styling with TailwindCSS and Utility First CSS. This is a long description to test the layout of the card. I am going to keep typing until I reach the end of the card.',
     date: '6-May-2024',
-  },
+  }
+
+  return {
+    ComparingAPIS,
+    ReactState,
+    NextJS,
+    TailWind,
+  }
 }
+
+export default articlesData
