@@ -3,15 +3,15 @@
 import '../../src/app/globals.css'
 import ProjectCard from '../../src/app/components/projects/ProjectCard'
 import { projectsData } from '@/app/components/projects/ProjectsData'
-import HeaderArea from '@/app/components/MainText/HeaderArea'
-import ProjectsLinksContainer from '@/app/components/Links/ProjectsLinksContainer'
+import HeaderArea from '@/app/components/projects/HeaderArea'
+import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
 
 function ProjectsPage() {
   return (
     <>
-      <div className="bg-black md:border-4 border-white font-inter">
+      <div className="bg-gray-800 md:border-4 border-white font-inter">
         <HeaderArea />
-        <div className="md:flex md:flex-row md:flex-wrap md:justify-center bg-black">
+        <div className="md:flex md:flex-row md:flex-wrap md:justify-center bg-gray-400">
           <ProjectCard {...projectsData.CommunityGarden} />
           <ProjectCard {...projectsData.GroupProject} />
           <ProjectCard {...projectsData.WeatherAPI} />

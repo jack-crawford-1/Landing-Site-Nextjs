@@ -1,11 +1,11 @@
-import Email from './Email'
-import Github from './Github'
-import CV from './CV'
+import Email from '../Links/Email'
+import Github from '../Links/Github'
+import CV from '../Links/CV'
 import Link from 'next/link'
 
 function ProjectsLinksContainer() {
   return (
-    <div className="flex md:flex-row flex-col items-center m-1">
+    <div className="flex md:flex-row flex-col items-center m-1 md:p-10 p-5">
       <div className="transform hover:scale-110">
         <Github />
       </div>
