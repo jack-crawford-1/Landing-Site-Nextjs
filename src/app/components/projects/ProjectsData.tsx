@@ -17,11 +17,11 @@ export const projectsData = {
   },
   CommunityGarden: {
     projectName: 'Community Garden',
-    projectLink: 'https://community-garden.pushed.nz/',
-    imageSrc: '/cg1.png',
+    projectLink: 'https://github.com/jack-crawford-1/garden-map',
+    imageSrc: '/gardenmap.png',
     altText: 'Community Garden Project',
     description:
-      'This was a personal project with the idea of being a full-stack application that allows users to find, share, and manage green spaces or community gardens. This was built during bootcamp as a solo project allowing me to practice full-stack development including authentication and database management, as well as integrating external APIs for location and information, and mapping services from LeafletJS.',
+      'This was a personal project that allows users to find, share, and manage green spaces or community gardens. This was built during bootcamp as a solo project allowing me to practice full-stack development including authentication and database management, as well as integrating external APIs for location and information, and mapping services from Google Maps API.',
     technologies: [
       'React',
       'Express',
@@ -29,11 +29,11 @@ export const projectsData = {
       'TypeScript',
       'sqlite3',
       'auth0',
-      'Geocode API',
-      'Leaflet maps',
-      'react-dropzone',
+      'Google Maps API',
+      'Multer',
+      'dotenv',
     ],
-    githubLink: 'https://github.com/jack-crawford-1/community-garden',
+    githubLink: 'https://github.com/jack-crawford-1/garden-map',
   },
 
   TodoApp: {

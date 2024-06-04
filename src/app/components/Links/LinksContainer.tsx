@@ -14,7 +14,7 @@ function LinksContainer() {
       </div>
 
       <div className="md:ml-5 transform m-2 hover:scale-110 text-white px-2 py-2 rounded hover:border text-x">
-        <Link href="/projects">Deployed Projects</Link>
+        <Link href="/projects">View Projects</Link>
       </div>
 
       <div className="transform hover:scale-110 text-white px-2 py-2 rounded hover:border text-x">
