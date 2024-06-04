@@ -25,24 +25,29 @@ function ProjectCard({
       style={{ boxShadow: '0 10px 15px rgba(0, 0, 0.0, 0.9)' }}
     >
       <div className="flex flex-col justify-between items-center w-fit">
-        <div className="m-0 flex flex-row p-0">
-          <h2 className="text-4xl text-white m-2 hover:scale-110 hover:duration-500 ease-in-out content-center">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={projectLink}
-              className="transition duration-300 ease-in-out"
-            >
-              <button className="text-white  hover:text-green-400 px-4 py-2 rounded transform hover:scale-110 inline-flex">
-                {projectName} ➾
-              </button>
-            </a>
-          </h2>
+        <div className="m-0 flex flex-col p-0">
+          <div className="relative group">
+            <h2 className="text-4xl text-white m-2 hover:scale-110 hover:duration-500 ease-in-out content-center">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={projectLink}
+                className="transition duration-300 ease-in-out"
+              >
+                <button className="text-white px-4 py-2 rounded transform hover:scale-110 inline-flex">
+                  {projectName}
+                </button>
+              </a>
+            </h2>
+            <span className="absolute bottom-8 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-black text-white text-sm rounded py-1 px-2 z-10">
+              See Deployed App
+            </span>
+          </div>
           <div className="md:hover:scale-110 transform md:hover:duration-200 ease-in-out md:mb-5 mb-2 rounded pt-5">
             <Image
               src={imageSrc}
               alt={altText}
-              width={350}
+              width={700}
               height={0}
               className="h-fit"
             />
@@ -52,22 +57,29 @@ function ProjectCard({
           <p className="text-md text-gray-200 m-2 leading-6">{description}</p>
         </div>
       </div>
-      <ul className="text-sm flex flex-row text-green-500 flex-wrap">
+      <h3 className="text-lg text-green-500 m-2">Technologies Used:</h3>
+
+      <ul className="text-sm flex flex-row text-gray-200 flex-wrap">
         {techStack.map((tech, index) => (
           <li
             key={index}
-            className="border-2 m-1 rounded-xl md:hover:text-white p-3 max-h-10 content-center justify-center md:hover:scale-110 transform hover:duration-200 ease-in-out whitespace-nowrap"
+            className=" m-1 rounded-xl md:hover:text-white p-3 max-h-10 content-center justify-center md:hover:scale-110 transform hover:duration-200 ease-in-out whitespace-nowrap"
           >
             {tech}
           </li>
         ))}
-        <a
-          href={githubLink}
-          target="_blank"
-          className=" m-1 hover:text-white p-0 content-center justify-center hover:scale-150 transform hover:duration-700 ease-in-out w-max min-w-max "
-        >
-          <Image src="/github-logo.png" alt="github" width={30} height={30} />
-        </a>
+        <div className="relative group m-1 p-0 content-center justify-center w-max min-w-max">
+          <a
+            href={githubLink}
+            target="_blank"
+            className="hover:text-white hover:scale-150 transform hover:duration-700 ease-in-out"
+          >
+            <Image src="/github-logo.png" alt="github" width={30} height={30} />
+          </a>
+          <span className="absolute bottom-8 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-black text-white text-sm rounded py-1 px-2 z-10">
+            see code on GitHub
+          </span>
+        </div>
       </ul>
     </div>
   )
