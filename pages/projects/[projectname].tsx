@@ -1,3 +1,5 @@
+'use client'
+import '../../src/app/globals.css'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import ProjectCard from '@/app/components/projects/ProjectCard'
 import { projectsData } from '@/app/components/projects/ProjectsData'
