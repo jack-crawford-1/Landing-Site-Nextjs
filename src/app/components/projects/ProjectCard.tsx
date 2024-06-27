@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface ProjectCardProps {
   projectName: string
@@ -45,15 +46,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </li>
         ))}
       </ul>
-      <div className="flex justify-between">
+      <div className="flex justify-between pt-5">
         {projectLink && (
           <a
             href={projectLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-300"
+            className="text-blue-500 hover:text-blue-300 font-extrabold"
           >
-            See Project
+            See demo
           </a>
         )}
         {githubLink && (
@@ -61,11 +62,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-300"
+            className="text-blue-500 hover:text-blue-300 font-extrabold"
           >
-            View Code on GitHub
+            View Code
           </a>
         )}
+
+        <a
+          href={'../projects'}
+          // target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 hover:text-blue-300 font-extrabold"
+        >
+          Back to Projects
+        </a>
       </div>
     </div>
   )
