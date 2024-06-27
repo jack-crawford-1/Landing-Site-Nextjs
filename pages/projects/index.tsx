@@ -1,30 +1,44 @@
 'use client'
-
 import '../../src/app/globals.css'
-import ProjectCard from '../../src/app/components/projects/ProjectCard'
-import { projectsData } from '@/app/components/projects/ProjectsData'
+import Image from 'next/image'
 import HeaderArea from '@/app/components/projects/HeaderArea'
 import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
+import Link from 'next/link'
+import { projects } from '@/app/components/projects/projectsList'
 
-function ProjectsPage() {
+export default function Projects() {
   return (
-    <>
-      <div className="bg-gray-800 md:border-4 border-white font-inter">
-        <HeaderArea />
-        <div className="md:flex md:flex-row md:flex-wrap md:justify-center bg-gray-400">
-          <ProjectCard {...projectsData.CommunityGarden} />
-          <ProjectCard {...projectsData.GroupProject} />
-          <ProjectCard {...projectsData.WeatherAPI} />
-          <ProjectCard {...projectsData.TodoApp} />
-          <ProjectCard {...projectsData.PokemonAPI} />
-          <ProjectCard {...projectsData.NasaAPI} />
-        </div>
-        <div className=" w-full max-w-5xl items-center md:ml-10 md:pl-10 font-bold">
-          <ProjectsLinksContainer />
-        </div>
+    <div className="p-4 bg-slate-800">
+      <HeaderArea />
+      <div className="flex flex-row flex-wrap justify-center gap-8 ">
+        {projects.map((project, index) => (
+          <Link href={`/projects/${project.route}`} key={index}>
+            <div
+              key={index}
+              className="border-8 border-white w-[500px] h-[300px] text-slate-900 flex flex-col rounded-xl overflow-hidden  hover:scale-105 transition-transform duration-500 ease-in-out"
+            >
+              <div className="h-[300px] overflow-hidden bg-white">
+                <Image
+                  src={project.image}
+                  alt={project.alt}
+                  width={500}
+                  height={300}
+                  className="object-cover"
+                />
+              </div>
+              <div className="bg-gray-200 flex-grow p-4 flex flex-col justify-between">
+                <h2 className="text-2xl font-semibold m-2">{project.title}</h2>
+                <div>
+                  <button className="mt-2 px-4 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-600 text-xs">
+                    See project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
-    </>
+      <ProjectsLinksContainer />
+    </div>
   )
 }
-
-export default ProjectsPage

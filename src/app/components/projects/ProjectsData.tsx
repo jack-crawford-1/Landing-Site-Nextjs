@@ -1,5 +1,15 @@
-export const projectsData = {
-  WeatherAPI: {
+interface Project {
+  projectName: string
+  projectLink: string
+  imageSrc: string
+  altText: string
+  description: string
+  technologies: string[]
+  githubLink: string
+}
+
+export const projectsData: Record<string, Project> = {
+  weatherapi: {
     projectName: 'Weather API',
     projectLink: 'https://weather-api.pushed.nz/',
     imageSrc: '/w.png',
@@ -16,7 +26,7 @@ export const projectsData = {
     ],
     githubLink: 'https://github.com/jack-crawford-1/weather-api',
   },
-  CommunityGarden: {
+  communitygarden: {
     projectName: 'Community Garden',
     projectLink: 'https://github.com/jack-crawford-1/garden-map',
     imageSrc: '/gardenmap.png',
@@ -36,8 +46,7 @@ export const projectsData = {
     ],
     githubLink: 'https://github.com/jack-crawford-1/garden-map',
   },
-
-  TodoApp: {
+  todoapp: {
     projectName: 'Todo App',
     projectLink: 'https://todo-fullstack.pushed.nz/',
     imageSrc: '/todo-project.png',
@@ -55,7 +64,7 @@ export const projectsData = {
     ],
     githubLink: 'https://github.com/jack-crawford-1/fullstack-todo-app',
   },
-  NasaAPI: {
+  nasaapi: {
     projectName: 'Nasa API',
     projectLink: '',
     imageSrc: '/nasa-img.png',
@@ -73,7 +82,7 @@ export const projectsData = {
     ],
     githubLink: 'https://github.com/jack-crawford-1/nasa-api.git',
   },
-  PokemonAPI: {
+  pokemonapi: {
     projectName: 'PokemonAPI',
     projectLink: 'https://pokedex-api-sage.vercel.app/',
     imageSrc: '/pokemon-project.png',
@@ -89,7 +98,7 @@ export const projectsData = {
     ],
     githubLink: 'https://github.com/jack-crawford-1/Pokedex',
   },
-  GroupProject: {
+  groupproject: {
     projectName: 'DevAcademy Group Project',
     projectLink: 'https://optimisticweather.pushed.nz/',
     imageSrc: '/ow.png',
@@ -108,5 +117,37 @@ export const projectsData = {
       'supertest',
     ],
     githubLink: 'https://github.com/tohora-2024/optimisticweather',
+  },
+  minipiano: {
+    projectName: 'Mini Piano using Tone.js',
+    projectLink: 'https://github.com/jack-crawford-1/Piano-app-tonejs-react',
+    imageSrc: '/piano.png',
+    altText: 'Piano app Tone.js with React',
+    description:
+      "A mini piano app that uses React with custom CSS for the UI, TypeScript for type safety, and Tone.js for the sound synthesis. It uses React's state management and event handling to manage key presses and chord playback. The app also leverages hooks like useState and useEffect to handle real-time updates and user interactions.",
+    technologies: ['React', 'Tone.js', 'TypeScript', 'Vite'],
+    githubLink: 'https://github.com/jack-crawford-1/Piano-app-tonejs-react',
+  },
+
+  boilerplate: {
+    projectName: 'React / Express Boilerplate: Fullstack',
+    projectLink: 'https://github.com/jack-crawford-1/React-Express-Boilerplate',
+    imageSrc: '/boilerplate.png',
+    altText: 'Fullstack Boilerplate Project',
+    description: `
+    This full-stack app boilerplate leverages modern technologies and best practices to provide a robust foundation for building web applications. The project includes authentication setup using Auth0 and features well-structured API endpoints for both server-side functionality and external data fetching. Internal routes handle server-side logic and responses, while external routes use fetch and superagent to retrieve data from third-party APIs.
+
+  `,
+    technologies: [
+      'React',
+      'Express',
+      'Auth0',
+      'SQLite',
+      'Docker',
+      'Procfile',
+      'fetch',
+      'superagent',
+    ],
+    githubLink: 'https://github.com/jack-crawford-1/React-Express-Boilerplate',
   },
 }
