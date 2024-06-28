@@ -35,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         />
       </div>
       <p className="mb-4">{description}</p>
-      <h3 className="text-2xl font-semibold mb-2">Technologies Used:</h3>
+      <h3 className="text-2xl font-semibold mb-2">Tech Used:</h3>
       <ul className="flex flex-wrap mb-4">
         {techStack.map((tech, index) => (
           <li
@@ -52,7 +52,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={projectLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-300 font-extrabold"
+            className="text-white hover:text-green-400 font-semibold underline ml-4 transform hover:scale-110"
           >
             See demo
           </a>
@@ -62,7 +62,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-300 font-extrabold"
+            className="text-white hover:text-green-400 font-semibold underline ml-4 transform hover:scale-110"
           >
             View Code
           </a>
@@ -70,9 +70,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
         <a
           href={'../projects'}
-          // target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 hover:text-blue-300 font-extrabold"
+          className="text-white hover:text-green-400 font-semibold underline ml-4 transform hover:scale-110"
         >
           Back to Projects
         </a>

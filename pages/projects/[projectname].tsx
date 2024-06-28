@@ -4,7 +4,6 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import ProjectCard from '@/app/components/projects/ProjectCard'
 import { projectsData } from '@/app/components/projects/ProjectsData'
 import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
-import Link from 'next/link'
 
 interface Project {
   projectName: string
@@ -53,13 +52,6 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
           technologies={project.technologies}
           githubLink={project.githubLink}
         />
-        {/* <div className="mt-4">
-          <Link href="/projects">
-            <button className="px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-slate-600">
-              Back to Projects
-            </button>
-          </Link>
-        </div> */}
         <ProjectsLinksContainer />
       </div>
     </div>
