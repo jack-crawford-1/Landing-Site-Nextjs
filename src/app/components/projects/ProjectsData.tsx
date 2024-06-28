@@ -28,7 +28,7 @@ export const projectsData: Record<string, Project> = {
   },
   communitygarden: {
     projectName: 'Community Garden',
-    projectLink: 'https://github.com/jack-crawford-1/garden-map',
+    projectLink: '',
     imageSrc: '/gardenmap.png',
     altText: 'Community Garden Project',
     description:
@@ -120,7 +120,7 @@ export const projectsData: Record<string, Project> = {
   },
   minipiano: {
     projectName: 'Mini Piano using Tone.js',
-    projectLink: 'https://github.com/jack-crawford-1/Piano-app-tonejs-react',
+    projectLink: '',
     imageSrc: '/piano.png',
     altText: 'Piano app Tone.js with React',
     description:
@@ -131,7 +131,7 @@ export const projectsData: Record<string, Project> = {
 
   boilerplate: {
     projectName: 'React / Express Boilerplate: Fullstack',
-    projectLink: 'https://github.com/jack-crawford-1/React-Express-Boilerplate',
+    projectLink: 'https://boilerplate.pushed.nz/',
     imageSrc: '/boilerplate.png',
     altText: 'Fullstack Boilerplate Project',
     description: `
