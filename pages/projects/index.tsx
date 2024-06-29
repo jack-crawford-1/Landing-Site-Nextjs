@@ -1,5 +1,6 @@
 'use client'
 import '../../src/app/globals.css'
+
 import Image from 'next/image'
 import HeaderArea from '@/app/components/projects/HeaderArea'
 import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
@@ -27,7 +28,7 @@ export default function Projects() {
                 />
               </div>
               <div className="bg-gray-200 flex-grow p-4 flex flex-col justify-between">
-                <h2 className="text-xl sm:text-2xl font-semibold m-2">
+                <h2 className="text-xl sm:text-2xl font-semibold m-2 text-slate-800">
                   {project.title}
                 </h2>
                 <div>

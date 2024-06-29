@@ -1,0 +1,180 @@
+@supports (animation-timeline: view()) {
+  @keyframes fade-out {
+    to {
+      background-size: 150%;
+      opacity: 0;
+    }
+  }
+  @keyframes zoom-out {
+    to {
+      font-size: 2rem;
+      padding-left: 0.1em;
+    }
+  }
+  @keyframes appear {
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes max-out {
+    to {
+      max-width: 100%;
+    }
+  }
+
+  .hero {
+    animation: fade-out linear both;
+    animation-timeline: view();
+    animation-range: exit -100px;
+  }
+  nav {
+    animation: max-out linear both;
+    animation-timeline: view();
+    animation-range-start: 80vh;
+    animation-range-end: 100vh;
+  }
+  nav:after {
+    animation: appear linear both;
+    animation-timeline: view();
+    animation-range-start: 60vh;
+    animation-range-end: 100vh;
+  }
+  .logo {
+    animation: zoom-out linear both;
+    animation-timeline: view();
+    animation-range-start: 10vh;
+    animation-range-end: 100vh;
+  }
+}
+@supports (not (animation-timeline: view())) {
+  .notice:after {
+    content: ' animation-timeline of scroll and view are currently not supported in your browser.';
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+.hero,
+nav,
+main {
+  max-width: 75ch;
+  margin: 0 auto;
+  padding-inline: 1em;
+}
+h2 {
+  text-wrap: balance;
+  line-height: 0.5;
+  color: #f9f6ef;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+h3 {
+  text-wrap: balance;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #f9f6ef;
+  margin-bottom: -10px;
+}
+
+p {
+  text-wrap: pretty;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #e2e8f0da;
+}
+
+ul {
+  padding-left: 1.2em;
+  margin-bottom: 1.5em;
+  font-weight: 400;
+  color: #e2e8f0da;
+}
+
+ul li {
+  margin-bottom: 0.5em;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  min-height: 3rem;
+  background-color: #1e293b;
+  backdrop-filter: blur(0.2em);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  color: #f9f6ef;
+}
+
+nav ul {
+  padding-right: 1em;
+  margin: 0;
+  display: inline-flex;
+  gap: 1rem;
+  line-height: 5;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: white;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+
+nav ul li:hover {
+  text-decoration: underline #5eb0e5;
+  transform: scale(1.1);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  min-height: 60vh;
+  background-image: url('https://scontent.fhlz4-1.fna.fbcdn.net/v/t39.30808-1/448431537_10229264750857924_6168311506534422367_n.jpg?stp=dst-jpg_p480x480&_nc_cat=111&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=udYcIG035nEQ7kNvgHXwfrg&_nc_ht=scontent.fhlz4-1.fna&oh=00_AYC7ecrJJZL0leKoX6B5WMtRv8JIy1lMZjdBEeAfWrFs1w&oe=6685318A');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  mix-blend-mode: lighten;
+  display: grid;
+  align-content: center;
+  container-type: inline-size;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 10rem;
+}
+
+button {
+  background: #c92793;
+  color: #ffffff;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  font-weight: 700;
+}
