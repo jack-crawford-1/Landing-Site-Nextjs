@@ -68,10 +68,11 @@ main {
   margin: 0 auto;
   padding-inline: 1em;
 }
+
 h2 {
   text-wrap: balance;
   line-height: 0.5;
-  color: #f9f6ef;
+  color: #f9efef;
   margin-bottom: 30px;
   margin-top: 30px;
 }
@@ -150,7 +151,7 @@ nav ul li a:hover {
 
 .hero {
   min-height: 60vh;
-  background-image: url('https://scontent.fhlz4-1.fna.fbcdn.net/v/t39.30808-1/448431537_10229264750857924_6168311506534422367_n.jpg?stp=dst-jpg_p480x480&_nc_cat=111&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=udYcIG035nEQ7kNvgHXwfrg&_nc_ht=scontent.fhlz4-1.fna&oh=00_AYC7ecrJJZL0leKoX6B5WMtRv8JIy1lMZjdBEeAfWrFs1w&oe=6685318A');
+  background-image: url('https://toppng.com/uploads/preview/happy-black-person-11531493747ib42obkabb.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 100% 50%;

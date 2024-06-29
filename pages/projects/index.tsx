@@ -6,10 +6,12 @@ import HeaderArea from '@/app/components/projects/HeaderArea'
 import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
 import Link from 'next/link'
 import { projects } from '@/app/components/projects/projectsList'
+import Nav from '@/app/components/nav/Nav'
 
 export default function Projects() {
   return (
     <div className="bg-slate-800">
+      <Nav />
       <HeaderArea />
       <div className="flex flex-row flex-wrap justify-center gap-8 p-8">
         {projects.map((project, index) => (
