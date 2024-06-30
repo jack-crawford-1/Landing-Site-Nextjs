@@ -1,8 +1,12 @@
+import Tooltip from '../utils/Tooltip'
+
 function Email() {
   return (
-    <a href="mailto:hello@jackcrawford.co.nz" target="_blank">
-      <button>hello@jackcrawford.co.nz</button>
-    </a>
+    <Tooltip text="get in touch">
+      <a href="mailto:hello@jackcrawford.co.nz" target="_blank">
+        <button>hello@jackcrawford.co.nz</button>
+      </a>
+    </Tooltip>
   )
 }
 

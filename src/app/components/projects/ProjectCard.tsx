@@ -47,21 +47,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </li>
         ))}
       </ul>
-      <div className="flex justify-between pt-5">
+      <div className="flex justify-end text-center  items-center pt-5">
         {projectLink && (
-          <Tooltip text="Go to deployed site">
-            <a
-              href={projectLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-green-400 font-semibold ml-4 transform hover:scale-110"
-            >
-              See demo
+          <Tooltip text="Go to demo site">
+            <a href={projectLink} target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/appIcon.png"
+                alt="deployed site"
+                width={50}
+                height={50}
+                className=" mr-4 transform hover:scale-125"
+              />
             </a>
           </Tooltip>
         )}
         {githubLink && (
-          <Tooltip text="View code on GitHub">
+          <Tooltip text="View code">
             <a
               href="https://github.com/jack-crawford-1"
               target="_blank"
@@ -72,6 +73,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 alt="github"
                 width={50}
                 height={50}
+                className=" mr-4 transform hover:scale-125"
               />
             </a>
           </Tooltip>
