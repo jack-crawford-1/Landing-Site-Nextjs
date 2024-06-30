@@ -11,15 +11,21 @@ export default function AboutPage() {
       <div className=" bg-slate-800 text-white mt-20">
         <main className="max-w-3xl p-10">
           <h2 className="text-2xl font-bold pt-4 pb-4">About Me</h2>
+          <p className="leading-relaxed text-gray-300 mb-3">
+            Hey there! I&apos;m Jack Crawford, a full stack software developer
+            from New Zealand. My journey began in account management and
+            marketing, but I found my true passion in coding. With a solid
+            foundation in React, TypeScript, and Node.js, I enjoy building
+            applications that are both functional and user-friendly.{' '}
+          </p>
+
           <p className="leading-relaxed text-gray-300">
-            As someone who has thrived in dynamic sales roles, I&apos;ve learnt
-            the importance of customer-centric strategies and the power of
-            effective communication. Now, channelling these skills into software
-            development, I have equipped myself with strong skills in React,
-            TypeScript, Node.js, and more. I&apos;m fascinated by how technology
-            can solve complex problems and am interested in crafting code
-            that&apos;s not only functional but also user-friendly and
-            accessible.
+            {' '}
+            I&apos;m focused on creating inclusive digital experiences and
+            continually learning new technologies. Recently, I&apos;ve worked on
+            projects like a mini piano app using Tone.js and React, and a
+            community garden app with React/Vite and Prisma. I love diving into
+            new challenges and expanding my skills with every project.
           </p>
 
           <h2 className="text-2xl font-bold pt-4 pb-4">Skills</h2>
