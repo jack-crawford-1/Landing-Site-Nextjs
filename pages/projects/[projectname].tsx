@@ -4,6 +4,7 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import ProjectCard from '@/app/components/projects/ProjectCard'
 import { projectsData } from '@/app/components/projects/ProjectsData'
 import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
+import Nav from '@/app/components/nav/Nav'
 
 interface Project {
   projectName: string
@@ -41,20 +42,23 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
   }
 
   return (
-    <div className="p-4 bg-slate-800 flex justify-center items-center min-h-screen">
-      <div className="max-w-4xl w-full">
-        <ProjectCard
-          projectName={project.projectName}
-          projectLink={project.projectLink}
-          imageSrc={project.imageSrc}
-          altText={project.altText}
-          description={project.description}
-          technologies={project.technologies}
-          githubLink={project.githubLink}
-        />
-        <ProjectsLinksContainer />
+    <>
+      <Nav />
+      <div className="p-4 md-pt-10 pt-[150px]  bg-slate-800 flex justify-center items-center min-h-screen">
+        <div className="max-w-4xl w-full">
+          <ProjectCard
+            projectName={project.projectName}
+            projectLink={project.projectLink}
+            imageSrc={project.imageSrc}
+            altText={project.altText}
+            description={project.description}
+            technologies={project.technologies}
+            githubLink={project.githubLink}
+          />
+          <ProjectsLinksContainer />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

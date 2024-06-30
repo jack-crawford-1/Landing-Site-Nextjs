@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Tooltip from '../utils/Tooltip'
 
 interface ProjectCardProps {
   projectName: string
@@ -48,33 +49,33 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </ul>
       <div className="flex justify-between pt-5">
         {projectLink && (
-          <a
-            href={projectLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-green-400 font-semibold underline ml-4 transform hover:scale-110"
-          >
-            See demo
-          </a>
+          <Tooltip text="Go to deployed site">
+            <a
+              href={projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-green-400 font-semibold ml-4 transform hover:scale-110"
+            >
+              See demo
+            </a>
+          </Tooltip>
         )}
         {githubLink && (
-          <a
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-green-400 font-semibold underline ml-4 transform hover:scale-110"
-          >
-            View Code
-          </a>
+          <Tooltip text="View code on GitHub">
+            <a
+              href="https://github.com/jack-crawford-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/github-logo.png"
+                alt="github"
+                width={50}
+                height={50}
+              />
+            </a>
+          </Tooltip>
         )}
-
-        <a
-          href={'../projects'}
-          rel="noopener noreferrer"
-          className="text-white hover:text-green-400 font-semibold underline ml-4 transform hover:scale-110"
-        >
-          Back to Projects
-        </a>
       </div>
     </div>
   )
