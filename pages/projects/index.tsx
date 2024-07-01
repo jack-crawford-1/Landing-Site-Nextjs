@@ -6,7 +6,7 @@ import HeaderArea from '@/app/components/projects/HeaderArea'
 import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
 import Link from 'next/link'
 import { projects } from '@/app/components/projects/projectsList'
-import Nav from '@/app/components/nav/Nav'
+import Nav from '../../src/app/components/nav/Nav'
 
 export default function Projects() {
   return (
