@@ -140,12 +140,12 @@ export const projectsData: Record<string, Project> = {
     description:
       "A mini piano app that uses React with custom CSS for the UI, TypeScript for type safety, and Tone.js for the sound synthesis. It uses React's state management and event handling to manage key presses and chord playback. The app also leverages hooks like useState and useEffect to handle real-time updates and user interactions.",
     comments:
-      'Working on this project was a lot of fun, especially as someone who enjoys music. It was rewarding to see the app come together and to be able to play actual tunes on a virtual piano. In hindsigt, I propbably would have gone with a guitar or ukulele as I know how to play those instruments and might have been able to try some more complex chords.',
+      'Working on this project was a lot of fun, especially as someone who enjoys music. It was cool to see the app come together and to be able to play actual tunes on a virtual piano. In hindsight, I propbably would have gone with a guitar or ukulele as I know how to play those instruments and might have been able to try some more complex chords, instead of googling piano chord structures, but overall it was intersting (and a bit of a time void) messing with the sounds available from the Tone.js framework.',
     technologies: ['React', 'Tone.js', 'TypeScript', 'CSS', 'Vite'],
     learnings:
-      'One of the main challenges was managing the state of the application to handle real-time key preses and audio playback. I learned a lot about how to manage state in React and how to use hooks to handle user interactions and updates in real-time. I also learned a lot about how to use Tone.js to create and manage audio in the browser, and how to use TypeScript to ensure type safety in my codebase',
+      'The main challenge was managing the state to handle real-time key presses, especially for combining keys to play minor or seventh chord. Using React useState to track which keys were pressed and useEffect to manage keydown and keyup event listeners was the clear choice. Playing with the config for the oscillator and envelope parameters made the sound to be more realistic and mapping over the chords on screen and using useState worked to show which chords are being played. ',
     future:
-      'In the future, Id like to add support for more octaves and more complex chords, as well as the ability to record and playback user input. I would also like to add more features like a metronome and a drum machine.',
+      'In the future, Id like to add support for more octaves and more complex chords, as well as the ability to record and playback user input. I would also like to add more features like a metronome and a drum machine. I should also probably make it usable on mobile as it is currently not very responsive.',
     githubLink: 'https://github.com/jack-crawford-1/Piano-app-tonejs-react',
   },
 
