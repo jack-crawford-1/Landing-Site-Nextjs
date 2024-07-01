@@ -83,8 +83,11 @@ export const projectsData: Record<string, Project> = {
     description:
       ' The Todo app allow for full CRUD operations on a database with user authentication and protected routes. This was my first time using auth0 for authentication and was a great opportunity to practice full-stack development with React and Express. The app wil show only todos for the specific user that is logged in.',
     comments: '',
-    learnings: '',
-    future: '',
+    learnings:
+      'I learnt a lot about setting up and managing authentication with Auth0 and integrating it with a full-stack application. It was also a good chance to practice creating protected routes and making sure that users can only access their own data. I spent some time working on the UI to make it clean and user-friendly, and it was interesting to see how different libraries like React Query can simplify data fetching and state management.',
+    future:
+      'In the future   (should have probably called this section "to do"...), I would like to add the ability to set reminders for todos and integrate with a calendar API as well as checking off a task as complete without deleting fully.',
+
     feature1: '',
     technologies: [
       'React',
