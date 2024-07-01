@@ -1,8 +1,7 @@
 import '../../src/app/globals.css'
-import Nav from '@/app/components/nav/Nav'
-import Email from '../../src/app/components/Links/Email'
-import Github from '@/app/components/Links/Github'
+import Nav from '../../src/app/components/nav/Nav'
 import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
+import DeveloperLogos from '../../src/app/components/utils/DeveloperLogos'
 
 export default function AboutPage() {
   return (
@@ -10,7 +9,7 @@ export default function AboutPage() {
       <Nav />
       <div className=" bg-slate-800 text-white mt-20">
         <main className="max-w-3xl p-10">
-          <h2 className="text-2xl font-bold pt-4 pb-4">About Me</h2>
+          <h2 className="text-2xl font-bold pt-6 pb-4">About Me</h2>
           <p className="leading-relaxed text-gray-300 mb-3">
             Hey there! I&apos;m Jack Crawford, a full stack software developer
             from New Zealand. My journey began in account management and
@@ -18,7 +17,6 @@ export default function AboutPage() {
             foundation in React, TypeScript, and Node.js, I enjoy building
             applications that are both functional and user-friendly.{' '}
           </p>
-
           <p className="leading-relaxed text-gray-300">
             {' '}
             I&apos;m focused on creating inclusive digital experiences and
@@ -27,8 +25,7 @@ export default function AboutPage() {
             community garden app with React/Vite and Prisma. I love diving into
             new challenges and expanding my skills with every project.
           </p>
-
-          <h2 className="text-2xl font-bold pt-4 pb-4">Skills</h2>
+          <h2 className="text-2xl font-bold pt-8 pb-4">Skills</h2>
           <div className="pl-3 text-gray-300 leading-10">
             <p>
               <span className="font-bold">Frontend:</span> React, JavaScript,
@@ -50,8 +47,10 @@ export default function AboutPage() {
               Methodologies, Project Planning, Leadership
             </p>
           </div>
-          <h2 className="text-2xl font-bold pt-4 pb-4">Experience</h2>
 
+          <DeveloperLogos />
+
+          <h2 className="text-2xl font-bold pt-4 pb-4">Experience</h2>
           <h3 className="text-xl font-medium mb-2 mt-4">
             Student Developer, Dev Academy Aotearoa; <br /> Wellington, NZ{' '}
             <span className="text-md font-medium">(Jan 2024 - May 2024)</span>
@@ -67,8 +66,7 @@ export default function AboutPage() {
               technology adoption.
             </li>
           </ul>
-
-          <h3 className="text-xl font-medium mb-2 mt-4">
+          <h3 className="text-xl font-medium mb-2 mt-6">
             Account Manager, Trade Me; <br />
             Wellington, NZ (Oct 2020 - Dec 2023)
           </h3>
@@ -88,8 +86,7 @@ export default function AboutPage() {
               shaped business and industry strategies.
             </li>
           </ul>
-
-          <h3 className="text-xl font-medium mb-2 mt-4">
+          <h3 className="text-xl font-medium mb-2 mt-6">
             Career Break <br />
             (Feb 2020 - Sep 2020)
           </h3>
@@ -100,8 +97,7 @@ export default function AboutPage() {
             </li>
             <li>Worked casually in landscaping roles part-time.</li>
           </ul>
-
-          <h3 className="text-xl font-medium mb-2 mt-4">
+          <h3 className="text-xl font-medium mb-2 mt-6">
             Account Manager, Lead Chat; <br />
             Melbourne, AUS (Nov 2016 - Dec 2019)
           </h3>
@@ -119,8 +115,7 @@ export default function AboutPage() {
               management, and sales cycle management.
             </li>
           </ul>
-
-          <h3 className="text-xl font-medium mb-2 mt-4">
+          <h3 className="text-xl font-medium mb-2 mt-6">
             Digital Sales Manager, Smudge; <br />
             Melbourne, AUS (Jun 2016 - Dec 2016)
           </h3>
@@ -135,8 +130,7 @@ export default function AboutPage() {
             </li>
             <li>Engaged SEO specialists to boost site traffic.</li>
           </ul>
-
-          <h3 className="text-xl font-medium mb-2 mt-4">
+          <h3 className="text-xl font-medium mb-2 mt-6">
             Key Accounts Manager, Zomato; <br />
             Melbourne, AUS (Jan 2015 - Jun 2016)
           </h3>
@@ -151,8 +145,7 @@ export default function AboutPage() {
             </li>
             <li>Managed key accounts.</li>
           </ul>
-
-          <h3 className="text-xl font-medium mb-2 mt-4">
+          <h3 className="text-xl font-medium mb-2 mt-6">
             Accounts Manager, NewsCorp; <br />
             Melbourne, AUS (Jan 2015 - Jun 2016)
           </h3>
