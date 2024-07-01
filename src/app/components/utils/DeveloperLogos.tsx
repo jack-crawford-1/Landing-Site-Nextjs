@@ -6,7 +6,7 @@ import Tooltip from '@/app/components/utils/Tooltip'
 export default function DeveloperLogos() {
   return (
     <div>
-      <span className="flex flex-row p-5 m-5 bg-slate-800 flex-wrap h-fit justify-center rounded z-0">
+      <span className=" max-w-[650px] flex flex-row p-5 md:p-0 pt-5 mt-5 bg-slate-800 flex-wrap h-fit justify-center rounded z-0">
         <Tooltip text="React.js">
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
@@ -97,7 +97,7 @@ export default function DeveloperLogos() {
             className="m-2"
           />
         </Tooltip>
-        <Tooltip text="Axios">
+        {/* <Tooltip text="Axios">
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg"
             alt="Axios Logo"
@@ -105,7 +105,7 @@ export default function DeveloperLogos() {
             height={50}
             className="m-2"
           />
-        </Tooltip>
+        </Tooltip> */}
         <Tooltip text="Prisma">
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"
@@ -142,7 +142,7 @@ export default function DeveloperLogos() {
             className="m-2"
           />
         </Tooltip>
-        <Tooltip text="GitHub">
+        {/* <Tooltip text="GitHub">
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
             alt="GitHub Logo"
@@ -150,7 +150,7 @@ export default function DeveloperLogos() {
             height={50}
             className="m-2"
           />
-        </Tooltip>
+        </Tooltip> */}
         <Tooltip text="Vercel">
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg"
@@ -178,7 +178,7 @@ export default function DeveloperLogos() {
             className="m-2"
           />
         </Tooltip>
-        <Tooltip text="Google Console">
+        {/* <Tooltip text="Google Console">
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
             alt="Google Cloud Logo"
@@ -186,8 +186,8 @@ export default function DeveloperLogos() {
             height={50}
             className="m-2"
           />
-        </Tooltip>
-        <Tooltip text="React Router">
+        </Tooltip> */}
+        {/* <Tooltip text="React Router">
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg"
             alt="React Router Logo"
@@ -195,7 +195,7 @@ export default function DeveloperLogos() {
             height={50}
             className="m-2"
           />
-        </Tooltip>
+        </Tooltip> */}
         <Tooltip text="Vitest">
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg"
@@ -205,7 +205,7 @@ export default function DeveloperLogos() {
             className="m-2"
           />
         </Tooltip>
-        <Tooltip text="VSCode">
+        {/* <Tooltip text="VSCode">
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
             alt="VSCode Logo"
@@ -222,7 +222,7 @@ export default function DeveloperLogos() {
             height={50}
             className="m-2"
           />
-        </Tooltip>
+        </Tooltip> */}
       </span>
     </div>
   )
