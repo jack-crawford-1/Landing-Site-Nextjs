@@ -17,6 +17,7 @@ interface Project {
 }
 
 export const projectsData: Record<string, Project> = {
+  // WEATHER API PROJECT
   weatherapi: {
     projectName: 'Weather API',
     projectLink: 'https://weather-api.pushed.nz/',
@@ -24,6 +25,12 @@ export const projectsData: Record<string, Project> = {
     altText: 'Weather API Project',
     description:
       'Allows users to see weather forecasts, including current conditions, temperature, and wind data. This project was a chance to practice using external APIs and deploying a live site with included dotenv files. I based the location on my hometown of Wellington, New Zealand and used the MeteoSource API to source the data.',
+    comments: '',
+    learnings:
+      'It was a good way to practice accessing data at various endpoints and using using Superagent to access the data from the backend. I was interested in deploying the site and using dotenv to keep my API key secure and how I would go about linking the api key in production. I also wanted to included a night mode toggle and spent a bit of time on the CSS to include a custom background. This ended up being a fun back and forward setting up state and using the ternary operator to change the background and text colours.',
+    future:
+      'I would like to clean up the UI on mobile devices and add search functionality for other locations. I would also like to add the ability to log in and save a users favourite location',
+    feature1: '',
     technologies: [
       'React',
       'Express',
@@ -36,6 +43,8 @@ export const projectsData: Record<string, Project> = {
     ],
     githubLink: 'https://github.com/jack-crawford-1/weather-api',
   },
+
+  // COMMUNITY GARDEN PROJECT
   communitygarden: {
     projectName: 'Community Garden',
     projectLink: '',
@@ -43,6 +52,10 @@ export const projectsData: Record<string, Project> = {
     altText: 'Community Garden Project',
     description:
       'This was a personal project that allows users to find, share, and manage green spaces or community gardens. This was built during bootcamp as a solo project allowing me to practice full-stack development including authentication and database management, as well as integrating external APIs for location and information, and mapping services from Google Maps API. Have deployed a previous version of this project using Dokku and plan to deploy this version to Vercel.',
+    comments: '',
+    learnings: '',
+    future: '',
+    feature1: '',
     technologies: [
       'Next JS',
       'Next Auth',
@@ -57,6 +70,8 @@ export const projectsData: Record<string, Project> = {
     ],
     githubLink: 'https://github.com/jack-crawford-1/garden-map',
   },
+
+  // TO-DO APP PROJECT
   todoapp: {
     projectName: 'Todo App',
     projectLink: 'https://todo-fullstack.pushed.nz/',
@@ -64,6 +79,10 @@ export const projectsData: Record<string, Project> = {
     altText: 'Todo App Project',
     description:
       ' The Todo app allow for full CRUD operations on a database with user authentication and protected routes. This was my first time using auth0 for authentication and was a great opportunity to practice full-stack development with React and Express. The app wil show only todos for the specific user that is logged in.',
+    comments: '',
+    learnings: '',
+    future: '',
+    feature1: '',
     technologies: [
       'React',
       'Express',
@@ -77,6 +96,8 @@ export const projectsData: Record<string, Project> = {
     ],
     githubLink: 'https://github.com/jack-crawford-1/fullstack-todo-app',
   },
+
+  // NASA API PROJECT
   nasaapi: {
     projectName: 'Nasa API',
     projectLink: '',
@@ -84,6 +105,10 @@ export const projectsData: Record<string, Project> = {
     altText: 'Nasa API Project',
     description:
       '(NOT CURRENTLY DEPLOYED) This app allows users to view the Image Of The Day sourced from the NASA API with React and TypeScript. It was a fun way to practice using external APIs and a good excuse to look at pictures of space.',
+    comments: '',
+    learnings: '',
+    future: '',
+    feature1: '',
     technologies: [
       'React',
       'Express',
@@ -95,6 +120,8 @@ export const projectsData: Record<string, Project> = {
     ],
     githubLink: 'https://github.com/jack-crawford-1/nasa-api.git',
   },
+
+  // POKEMON API PROJECT
   pokemonapi: {
     projectName: 'PokemonAPI',
     projectLink: 'https://pokedex-api-sage.vercel.app/',
@@ -102,6 +129,10 @@ export const projectsData: Record<string, Project> = {
     altText: 'Pokemon Project',
     description:
       'This app allows users to view detailed information on their favorite Pokemon. Using React Router and the Pokemon API and deployed through Vercel, this was an extension of a challenge in class to practice using external APIs and routing in React.',
+    comments: '',
+    learnings: '',
+    future: '',
+    feature1: '',
     technologies: [
       'React',
       'Express',
@@ -112,6 +143,8 @@ export const projectsData: Record<string, Project> = {
     ],
     githubLink: 'https://github.com/jack-crawford-1/Pokedex',
   },
+
+  // DEVACADEMY GROUP PROJECT
   groupproject: {
     projectName: 'DevAcademy Group Project',
     projectLink: 'https://optimisticweather.pushed.nz/',
@@ -119,6 +152,10 @@ export const projectsData: Record<string, Project> = {
     altText: 'Group Project',
     description:
       'This was our final group project during bootcamp, a weather app that allows users to find activities and events for a specific location based on the weather forecast. This was build over 5 days with a team of 4 developers and was a great opportunity to practice working in an agiile environment based on real-world conditions where we problem solved as a group and worked on a shared codebase using git and GitHub',
+    comments: '',
+    learnings: '',
+    future: '',
+    feature1: '',
     technologies: [
       'React',
       'Express',
@@ -132,6 +169,8 @@ export const projectsData: Record<string, Project> = {
     ],
     githubLink: 'https://github.com/tohora-2024/optimisticweather',
   },
+
+  // MINI PIANO APP
   minipiano: {
     projectName: 'Mini Piano using Tone.js',
     projectLink: '',
@@ -149,6 +188,7 @@ export const projectsData: Record<string, Project> = {
     githubLink: 'https://github.com/jack-crawford-1/Piano-app-tonejs-react',
   },
 
+  // FULLSTACK BOILERPLATE PROJECT
   boilerplate: {
     projectName: 'React / Express Boilerplate: Fullstack',
     projectLink: 'https://boilerplate.pushed.nz/',
