@@ -51,10 +51,13 @@ export const projectsData: Record<string, Project> = {
     imageSrc: '/gardenmap.png',
     altText: 'Community Garden Project',
     description:
-      'This was a personal project that allows users to find, share, and manage green spaces or community gardens. This was built during bootcamp as a solo project allowing me to practice full-stack development including authentication and database management, as well as integrating external APIs for location and information, and mapping services from Google Maps API. Have deployed a previous version of this project using Dokku and plan to deploy this version to Vercel.',
-    comments: '',
-    learnings: '',
-    future: '',
+      'This was a personal project that allows users to find, share, and manage green spaces or community gardens. This was built during down-time at the DevAcademy bootcamp as a solo project allowing me to practice full-stack development. Included authentication and database management, as well as integrating external APIs for location and information, and mapping services from Google Maps API.',
+    comments:
+      'Having spent my 20s living in Melbourne and seeing the poularity of community gardens there, I wanted to create a platform that would allow people to find and share green spaces in their local area but tagging a latitude and longitude on a map, and creating a landing page with site details other users can see. The idea was that people could "propose" a potential site that is not in use and this would allow others to connect and hopefully utilise the space.',
+    learnings:
+      'I wanted to practice using the Google Maps API and see how I could integrate it with a database and user authentication. I had initially started off using Leaf.js which incorporates OpenStreetMaps but swapped to the Google API when I was looking to inprove the styling. I also wanted to practice using Prisma and SQLite3 for the database, specifically how a user would be able to upload images. I was interested in getting a better hang of Next Auth for authentication and see how I could use it to protect routes and data with the goal of only allowing the user who created the site to edit or delete it. I managed to set up a user profile page from the user data which helped when it came to pre-populating forms with the users info.',
+    future:
+      'Comment sections for each site would be a big improvement, allowing users to chat or comment on details about a site. Maybe they have legal or speciic skills that could help with the site. I would also like to add a search function to find sites in a specific area and a way to filter sites by tags or categories. I would also like to add a way to upload multiple images to add protected routes.',
     feature1: '',
     technologies: [
       'Next JS',
