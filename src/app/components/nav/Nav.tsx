@@ -14,12 +14,9 @@ export default function Nav() {
             <span style={{ color: '#FFCC33' }}>a</span>
             <span style={{ color: '#00FF7F' }}>c</span>
             <span style={{ color: '#FFA343' }}>k</span>
-            {/* <span style={{ color: '#FF8C00' }}> </span>
-            <span className="gradient-outline">Crawford</span> */}
           </div>
         </a>
 
-        {/* white border */}
         <style>
           {`
               .gradient-outline {
@@ -33,34 +30,26 @@ export default function Nav() {
               `}
         </style>
 
-        {/* colourful border / backshadow-ish */}
-
-        {/* <style>
-            {`
-              .gradient-outline {
-                color: #1e293b;
-                text-shadow: 
-                  -2px -2px 0 #808080, 
-                  -2px 2px 0 #C3BDEB,
-                  -2px -2px 0 #FF8C00;
-                  }
-                `}
-              </style> */}
-
-        <ul className="mt-4 flex  rounded-lg  p-4 font-medium md:mt-0 flex-row md:space-x-8 md:p-0 rtl:space-x-reverse">
+        <ul className="mt-4 flex rounded-lg p-4 font-medium md:mt-0 flex-row md:space-x-8 md:p-0 rtl:space-x-reverse">
           {currentPath !== '/projects' && (
-            <li className="p-2 hover:text-pink-600 hover:scale-110 transform duration-200 ease-in-out">
-              <Link href="/projects">Projects </Link>
-            </li>
+            <Link href="/projects">
+              <li className="p-2 hover:text-pink-600 hover:scale-110 transform duration-200 ease-in-out">
+                Projects
+              </li>
+            </Link>
           )}
           {currentPath !== '/about' && (
-            <li className="p-2 hover:text-pink-600 hover:scale-110 transform duration-200 ease-in-out">
-              <Link href="/about">About </Link>
-            </li>
+            <Link href="/about">
+              <li className="p-2 hover:text-pink-600 hover:scale-110 transform duration-200 ease-in-out">
+                About
+              </li>
+            </Link>
           )}
-          <li className="p-2 hover:text-pink-600 hover:scale-110 transform duration-200 ease-in-out">
-            <Link href="/">Home</Link>
-          </li>
+          <Link href="/">
+            <li className="p-2 hover:text-pink-600 hover:scale-110 transform duration-200 ease-in-out">
+              Home
+            </li>
+          </Link>
         </ul>
       </div>
     </nav>
