@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import Tooltip from '../utils/Tooltip'
-import { features } from 'process'
 
 interface ProjectCardProps {
   projectName: string
@@ -64,7 +63,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {features.map((feature, index) => (
               <li
                 key={index}
-                className="mb-2 pl-4 leading-relaxed text-gray-300"
+                className="mb-2 pl-4 md:ml-4 ml-2 leading-relaxed text-gray-300 list-disc"
               >
                 {feature}
               </li>
@@ -79,10 +78,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <h3 className="text-2xl font-semibold mb-3 mt-3">Tech Used:</h3>
       <ul className="flex flex-wrap mb-4">
         {techStack.map((tech, index) => (
-          <li
-            key={index}
-            className="bg-gray-700 rounded-full px-4 py-2 m-1 text-sm"
-          >
+          <li key={index} className="bg-gray-700 rounded px-4 py-2 m-1 text-sm">
             {tech}
           </li>
         ))}
@@ -103,11 +99,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         )}
         {githubLink && (
           <Tooltip text="View code">
-            <a
-              href="https://github.com/jack-crawford-1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">
               <Image
                 src="/github-logo.png"
                 alt="github"
