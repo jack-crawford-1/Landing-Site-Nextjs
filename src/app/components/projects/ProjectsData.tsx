@@ -131,10 +131,12 @@ export const projectsData: Record<string, Project> = {
     imageSrc: '/pokemon-project.png',
     altText: 'Pokemon Project',
     description:
-      'This app allows users to view detailed information on their favorite Pokemon. Using React Router and the Pokemon API and deployed through Vercel, this was an extension of a challenge in class to practice using external APIs and routing in React.',
-    comments: '',
-    learnings: '',
-    future: '',
+      'This app allows users to view detailed information about their favorite Pokémon. Built with React Router and the Pokémon API, and deployed via Vercel. Pokémon was huge when I was a kid, and if 10-year-old me knew how to code, this is definitely what I would have made',
+    comments: ' ',
+    learnings:
+      'I was keen to try deploying a React app to Vercel to compare it with their native Next.js deployment. This project was a great way to practice using React Router to navigate between pages and pass data between components. Plus, I wanted to hone my skills in fetching data from APIs, and the Pokémon API seemed like a fun and engaging resource to work with.',
+    future:
+      'The current CSS isnt very user-friendly on smaller screens, so a big goal would be to fix the styling to make it more responsive. I also want to add more interactive features to the site. One idea is to gamify it by incorporating some kind of battle system that leverages the Pokémon stats. Theres heaps of potential to make the site more engaging but Im not sure if I will return to this in the short term with new projects on the go.',
     feature1: '',
     technologies: [
       'React',
