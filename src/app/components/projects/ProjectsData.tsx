@@ -158,10 +158,12 @@ export const projectsData: Record<string, Project> = {
     imageSrc: '/ow.png',
     altText: 'Group Project',
     description:
-      'This was our final group project during bootcamp, a weather app that allows users to find activities and events for a specific location based on the weather forecast. This was build over 5 days with a team of 4 developers and was a great opportunity to practice working in an agiile environment based on real-world conditions where we problem solved as a group and worked on a shared codebase using git and GitHub',
+      'This was our final group project during the DevAcademy bootcamp, a weather app that allows users to find activities and events for a specific location based on the weather forecast. This was build over 5 days with a team of 4 developers and was a great opportunity to practice working in an agiile environment based on real-world conditions where we problem solved as a group and worked on a shared codebase using git and GitHub',
     comments: '',
-    learnings: '',
-    future: '',
+    learnings:
+      'Being a group project with a tight deadline, we had to be very organised and communicate well to ensure that everyone was on the same page. We used GitHub projects to manage tasks and issues and had daily standups to check in on progress and discuss any blockers. Some of the biggest challenges were integrating the different parts of the app, such as the weather API and the EventFinda API, and ensuring that the data was displayed correctly on the front end. We had a few merge conflicts which ended up being a great way to learn how to approach future group projects and commit strategies.',
+    future:
+      'With the course finished, I hope I get an opportunity to work with my classmates again to build out the AI side to better recommend activities as well as getting more detailed information from the EventFinder API. Either way, it ended up being a great experience and I learnt a lot about working in a team and how to manage a project with multiple moving parts.',
     feature1: '',
     technologies: [
       'React',
