@@ -102,15 +102,17 @@ export const projectsData: Record<string, Project> = {
 
   // NASA API PROJECT
   nasaapi: {
-    projectName: 'Nasa API',
+    projectName: 'NASA API',
     projectLink: '',
     imageSrc: '/nasa-img.png',
     altText: 'Nasa API Project',
     description:
-      '(NOT CURRENTLY DEPLOYED) This app allows users to view the Image Of The Day sourced from the NASA API with React and TypeScript. It was a fun way to practice using external APIs and a good excuse to look at pictures of space.',
+      'This app allows users to view the Image Of The Day sourced from the NASA API with React and TypeScript. It was a fun way to practice using external APIs and a good excuse to look at pictures of space.',
     comments: '',
-    learnings: '',
-    future: '',
+    learnings:
+      'I learnt that that NASA takes some epic pictures of space! I also spent some time making sure the API key in use with secure if the app was to be deployed in future. I was interested in using Superagent to fetch the data from the backend and how tokens could be used to access the data. Typescript came in handy when accessing the data and making sure the data was in the correct format and helped me get my head around some of the complex data structures available.',
+    future:
+      'I would like to add a search function to find images from a specific date which would involve introducing a filer. I would also like to add a way to save images to a user profile and maybe add a way to share images with other users. The styling is also very basic so I would like to spruce that up a bit.',
     feature1: '',
     technologies: [
       'React',
