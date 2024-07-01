@@ -158,16 +158,6 @@ export default function AboutPage() {
           </ul>
         </main>
         <ProjectsLinksContainer />
-        {/* <div>
-          <a href="/jack-crawford-cv.pdf" download>
-            <button className="bg-pink-600 text-white mt-2 font-bold p-2 rounded-lg text-sm mb-20 ml-10 transform hover:scale-110 duration-200 ease-in-out">
-              Download CV
-            </button>
-          </a>
-          <span className="pl-5 transform hover:scale-110 hover:text-pink-400 hover:font-bold">
-            <Email />
-          </span>
-        </div> */}
       </div>
     </div>
   )

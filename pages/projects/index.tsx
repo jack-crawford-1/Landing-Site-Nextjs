@@ -43,7 +43,9 @@ export default function Projects() {
           </Link>
         ))}
       </div>
-      <ProjectsLinksContainer />
+      <div className="md:pl-60">
+        <ProjectsLinksContainer />
+      </div>
     </div>
   )
 }
