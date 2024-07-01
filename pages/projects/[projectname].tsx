@@ -12,6 +12,9 @@ interface Project {
   imageSrc: string
   altText: string
   description: string
+  features?: string
+  future?: string
+  comments?: string
   technologies: string[]
   githubLink: string
 }
@@ -52,7 +55,15 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
             imageSrc={project.imageSrc}
             altText={project.altText}
             description={project.description}
+            comments={project.comments}
+            feature1={project.feature1}
+            feature2={project.feature2}
+            feature3={project.feature3}
+            feature4={project.feature4}
+            feature5={project.feature5}
             technologies={project.technologies}
+            learnings={project.learnings}
+            future={project.future}
             githubLink={project.githubLink}
           />
           <ProjectsLinksContainer />

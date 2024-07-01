@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import Tooltip from '../utils/Tooltip'
+import { features } from 'process'
 
 interface ProjectCardProps {
   projectName: string
@@ -9,7 +9,15 @@ interface ProjectCardProps {
   imageSrc: string
   altText: string
   description: string
+  comments?: string
+  feature1?: string
+  feature2?: string
+  feature3?: string
+  feature4?: string
+  feature5?: string
   technologies: string[]
+  learnings?: string
+  future?: string
   githubLink: string
 }
 
@@ -19,10 +27,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   imageSrc,
   altText,
   description,
+  comments,
+  feature1,
+  feature2,
+  feature3,
+  feature4,
+  feature5,
+  learnings,
+  future,
   technologies,
   githubLink,
 }) => {
   const techStack = technologies || []
+  const features = [feature1, feature2, feature3, feature4, feature5].filter(
+    Boolean
+  )
   return (
     <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
       <h2 className="text-3xl font-bold mb-4">{projectName}</h2>
@@ -35,8 +54,29 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           className="rounded-lg"
         />
       </div>
-      <p className="mb-4">{description}</p>
-      <h3 className="text-2xl font-semibold mb-2">Tech Used:</h3>
+      <h3 className="text-2xl font-semibold mb-2">About:</h3>
+      <p className="mb-4 leading-relaxed text-gray-300">{description}</p>
+      <p className="mb-4 leading-relaxed text-gray-300">{comments}</p>
+      {features.length > 0 && (
+        <>
+          <h3 className="text-2xl font-semibold mb-2">Features:</h3>
+          <ul>
+            {features.map((feature, index) => (
+              <li
+                key={index}
+                className="mb-2 pl-4 leading-relaxed text-gray-300"
+              >
+                {feature}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+      <h3 className="text-2xl font-semibold mb-2">Learnings:</h3>
+      <p className="mb-4 leading-relaxed text-gray-300">{learnings}</p>
+      <h3 className="text-2xl font-semibold mb-2 mt-3">Future plans:</h3>
+      <p className="mb-4 leading-relaxed text-gray-300">{future}</p>
+      <h3 className="text-2xl font-semibold mb-3 mt-3">Tech Used:</h3>
       <ul className="flex flex-wrap mb-4">
         {techStack.map((tech, index) => (
           <li
