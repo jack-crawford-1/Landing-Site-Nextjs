@@ -2,6 +2,7 @@ import Email from './Email'
 import Github from './Github'
 import CV from './CV'
 import Link from 'next/link'
+import About from './About'
 
 function LinksContainer() {
   return (
@@ -13,7 +14,7 @@ function LinksContainer() {
         <Email />
       </div>
       <div className="transform m-1 hover:scale-110 duration-200 ease-in-out text-white px-2 py-2 rounded  text-xl">
-        <Link href="/about">About</Link>
+        <About />
       </div>
 
       <div className="transform m-1 hover:scale-110 duration-200 ease-in-out text-white px-2 py-2 rounded  text-xl">

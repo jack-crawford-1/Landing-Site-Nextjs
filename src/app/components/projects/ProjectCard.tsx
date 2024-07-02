@@ -96,11 +96,22 @@ const ProjectCard: React.FC<Project> = ({
       </ul>
 
       <div className="flex justify-end text-center  items-center pt-5">
+        <Tooltip text="Back to Projects">
+          <a href={projectLink} target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/icons/back-arrow.png"
+              alt="deployed site"
+              width={50}
+              height={50}
+              className=" mr-4 transform hover:scale-125"
+            />
+          </a>
+        </Tooltip>
         {projectLink && (
           <Tooltip text="Go to demo site">
             <a href={projectLink} target="_blank" rel="noopener noreferrer">
               <Image
-                src="/icons/appIcon.png"
+                src="/icons/web.png"
                 alt="deployed site"
                 width={50}
                 height={50}
