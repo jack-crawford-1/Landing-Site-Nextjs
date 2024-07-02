@@ -19,13 +19,13 @@ const ProjectCard: React.FC<Project> = ({
   technologies,
   githubLink,
   photos,
+  videoSrc,
 }) => {
   const techStack = technologies || []
   const features = [feature1, feature2, feature3, feature4, feature5].filter(
     Boolean
   )
 
-  console.log('photos:', photos)
   return (
     <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
       <h2 className="text-3xl font-bold mb-4">{projectName}</h2>
@@ -58,8 +58,17 @@ const ProjectCard: React.FC<Project> = ({
       )}
       <h3 className="text-2xl font-semibold mb-2">Learnings:</h3>
       <p className="mb-4 leading-relaxed text-gray-300">{learnings}</p>
-      {photos && photos.length > 0 && (
-        <>
+      {videoSrc ? (
+        <div className="mt-5 mb-5">
+          <h3 className="text-2xl font-semibold mb-2 mt-3">watch demo</h3>
+          <video width="800" height="400" controls className="rounded-lg">
+            <source src={videoSrc} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      ) : (
+        photos &&
+        photos.length > 0 && (
           <div className="flex flex-wrap mt-5 mb-5">
             {photos.map((photo, index) => (
               <Image
@@ -68,11 +77,11 @@ const ProjectCard: React.FC<Project> = ({
                 alt={projectName}
                 width={400}
                 height={200}
-                className="rounded-lg m-1"
+                className="rounded-lg m-2"
               />
             ))}
           </div>
-        </>
+        )
       )}
       <h3 className="text-2xl font-semibold mb-2 mt-3">Future plans:</h3>
       <p className="mb-4 leading-relaxed text-gray-300">{future}</p>

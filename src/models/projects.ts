@@ -15,4 +15,5 @@ interface Project {
   learnings?: string
   githubLink: string
   photos?: string[] | undefined
+  videoSrc?: string
 }

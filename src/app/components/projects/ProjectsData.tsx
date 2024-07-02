@@ -23,6 +23,7 @@ export const projectsData: Record<string, Project> = {
       'Vite',
     ],
     githubLink: 'https://github.com/jack-crawford-1/weather-api',
+    photos: ['/wd2.png', '/wd1.png'],
   },
 
   communitygarden: {
@@ -52,6 +53,7 @@ export const projectsData: Record<string, Project> = {
       'Dotenv',
     ],
     githubLink: 'https://github.com/jack-crawford-1/garden-map',
+    photos: ['/gm1.png', '/gm2.png'],
   },
 
   todoapp: {
@@ -157,6 +159,7 @@ export const projectsData: Record<string, Project> = {
       'supertest',
     ],
     githubLink: 'https://github.com/tohora-2024/optimisticweather',
+    photos: ['/gp1.png', '/gp2.png'],
   },
 
   minipiano: {
@@ -174,6 +177,7 @@ export const projectsData: Record<string, Project> = {
     future:
       'In the future, Id like to add support for more octaves and more complex chords, as well as the ability to record and playback user input. I would also like to add more features like a metronome and a drum machine. I should also probably make it usable on mobile as it is currently not very responsive.',
     githubLink: 'https://github.com/jack-crawford-1/Piano-app-tonejs-react',
+    videoSrc: '/project/piano.mp4',
   },
 
   boilerplate: {
@@ -204,5 +208,6 @@ export const projectsData: Record<string, Project> = {
       'Vite',
     ],
     githubLink: 'https://github.com/jack-crawford-1/React-Express-Boilerplate',
+    photos: ['/bpdemo1.png', '/bpdemo3.png'],
   },
 }
