@@ -2,7 +2,7 @@ export const projectsData: Record<string, Project> = {
   weatherapi: {
     projectName: 'Weather API',
     projectLink: 'https://weather-api.pushed.nz/',
-    imageSrc: '/w.png',
+    imageSrc: 'project/w.png',
     altText: 'Weather API Project',
     description:
       'Allows users to see weather forecasts, including current conditions, temperature, and wind data. This project was a chance to practice using external APIs and deploying a live site with included dotenv files. I based the location on my hometown of Wellington, New Zealand and used the MeteoSource API to source the data.',
@@ -23,13 +23,13 @@ export const projectsData: Record<string, Project> = {
       'Vite',
     ],
     githubLink: 'https://github.com/jack-crawford-1/weather-api',
-    photos: ['/wd2.png', '/wd1.png'],
+    photos: ['/project/wd2.png', '/project/wd1.png'],
   },
 
   communitygarden: {
     projectName: 'Community Garden',
     projectLink: '',
-    imageSrc: '/gardenmap.png',
+    imageSrc: 'project/gardenmap.png',
     altText: 'Community Garden Project',
     description:
       'This was a personal project that allows users to find, share, and manage green spaces or community gardens. This was built during down-time at the DevAcademy bootcamp as a solo project allowing me to practice full-stack development. Included authentication and database management, as well as integrating external APIs for location and information, and mapping services from Google Maps API.',
@@ -53,13 +53,13 @@ export const projectsData: Record<string, Project> = {
       'Dotenv',
     ],
     githubLink: 'https://github.com/jack-crawford-1/garden-map',
-    photos: ['/gm1.png', '/gm2.png'],
+    photos: ['/project/gm1.png', '/project/gm2.png'],
   },
 
   todoapp: {
     projectName: 'Todo App',
     projectLink: 'https://todo-fullstack.pushed.nz/',
-    imageSrc: '/todo-project.png',
+    imageSrc: '/project/todo-project.png',
     altText: 'Todo App Project',
     description:
       ' The Todo app allow for full CRUD operations on a database with user authentication and protected routes. This was my first time using auth0 for authentication and was a great opportunity to practice full-stack development with React and Express. The app wil show only todos for the specific user that is logged in.',
@@ -87,7 +87,7 @@ export const projectsData: Record<string, Project> = {
   nasaapi: {
     projectName: 'NASA API',
     projectLink: '',
-    imageSrc: '/nasa-img.png',
+    imageSrc: '/project/nasa-img.png',
     altText: 'Nasa API Project',
     description:
       'This app allows users to view the Image Of The Day sourced from the NASA API with React and TypeScript. It was a fun way to practice using external APIs and a good excuse to look at pictures of space.',
@@ -112,7 +112,7 @@ export const projectsData: Record<string, Project> = {
   pokemonapi: {
     projectName: 'PokemonAPI',
     projectLink: 'https://pokedex-api-sage.vercel.app/',
-    imageSrc: '/pokemon-project.png',
+    imageSrc: '/project/pokemon-project.png',
     altText: 'Pokemon Project',
     description:
       'This app allows users to view detailed information about their favorite Pokémon. Built with React Router and the Pokémon API, and deployed via Vercel. Pokémon was huge when I was a kid, and if 10-year-old me knew how to code, this is definitely what I would have made',
@@ -131,13 +131,13 @@ export const projectsData: Record<string, Project> = {
       'Vite',
     ],
     githubLink: 'https://github.com/jack-crawford-1/Pokedex',
-    photos: ['/pkdemo3.png', '/pkdemo2.png'],
+    photos: ['/project/pkdemo3.png', '/project/pkdemo2.png'],
   },
 
   groupproject: {
     projectName: 'DevAcademy Group Project',
     projectLink: 'https://optimisticweather.pushed.nz/',
-    imageSrc: '/ow.png',
+    imageSrc: '/project/ow.png',
     altText: 'Group Project',
     description:
       'This was our final group project during the DevAcademy bootcamp, a weather app that allows users to find activities and events for a specific location based on the weather forecast. This was build over 5 days with a team of 4 developers and was a great opportunity to practice working in an agiile environment based on real-world conditions where we problem solved as a group and worked on a shared codebase using git and GitHub',
@@ -159,13 +159,13 @@ export const projectsData: Record<string, Project> = {
       'supertest',
     ],
     githubLink: 'https://github.com/tohora-2024/optimisticweather',
-    photos: ['/gp1.png', '/gp2.png'],
+    photos: ['/project/gp1.png', '/project/gp2.png'],
   },
 
   minipiano: {
     projectName: 'Mini Piano using Tone.js',
     projectLink: '',
-    imageSrc: '/piano.png',
+    imageSrc: '/project/piano.png',
     altText: 'Piano app Tone.js with React',
     description:
       "A mini piano app that uses React with custom CSS for the UI, TypeScript for type safety, and Tone.js for the sound synthesis. It uses React's state management and event handling to manage key presses and chord playback. The app also leverages hooks like useState and useEffect to handle real-time updates and user interactions.",
@@ -183,7 +183,7 @@ export const projectsData: Record<string, Project> = {
   boilerplate: {
     projectName: 'React / Express Boilerplate: Fullstack',
     projectLink: 'https://boilerplate.pushed.nz/',
-    imageSrc: '/boilerplate.png',
+    imageSrc: '/project/boilerplate.png',
     altText: 'Fullstack Boilerplate Project',
     description: `This full-stack app boilerplate leverages modern technologies and best practices to provide a robust foundation for building web applications. The project includes authentication setup using Auth0 and features well-structured API endpoints for both server-side functionality and external data fetching. Internal routes handle server-side logic and responses, while external routes use fetch and superagent to retrieve data from third-party APIs.`,
     comments: `This was an extension of a template used in a class while at bootcamp. I wanted to be able to quickly spin up a full stack website with React and Express and have it be ready to deploy with a usable interface, authentication, and database. I spent some time making sure the code was clean and well organised so that I could easily update it in the future.`,
@@ -208,6 +208,6 @@ export const projectsData: Record<string, Project> = {
       'Vite',
     ],
     githubLink: 'https://github.com/jack-crawford-1/React-Express-Boilerplate',
-    photos: ['/bpdemo1.png', '/bpdemo3.png'],
+    photos: ['/project/bpdemo1.png', '/project/bpdemo3.png'],
   },
 }

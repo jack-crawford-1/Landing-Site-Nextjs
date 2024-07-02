@@ -7,7 +7,7 @@ function Github() {
       target="
     _blank"
     >
-      <Image src="/github-logo.png" alt="github" width={50} height={50} />
+      <Image src="/icons/github-logo.png" alt="github" width={50} height={50} />
     </a>
   )
 }
