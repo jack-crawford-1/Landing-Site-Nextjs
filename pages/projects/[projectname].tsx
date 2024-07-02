@@ -65,6 +65,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
             learnings={project.learnings}
             future={project.future}
             githubLink={project.githubLink}
+            photos={project.photos}
           />
           <ProjectsLinksContainer />
         </div>

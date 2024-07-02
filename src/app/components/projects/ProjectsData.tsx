@@ -1,23 +1,4 @@
-interface Project {
-  projectName: string
-  projectLink: string
-  imageSrc: string
-  altText: string
-  description: string
-  comments?: string
-  feature1?: string
-  feature2?: string
-  feature3?: string
-  feature4?: string
-  feature5?: string
-  future?: string
-  technologies: string[]
-  learnings?: string
-  githubLink: string
-}
-
 export const projectsData: Record<string, Project> = {
-  // WEATHER API PROJECT
   weatherapi: {
     projectName: 'Weather API',
     projectLink: 'https://weather-api.pushed.nz/',
@@ -44,7 +25,6 @@ export const projectsData: Record<string, Project> = {
     githubLink: 'https://github.com/jack-crawford-1/weather-api',
   },
 
-  // COMMUNITY GARDEN PROJECT
   communitygarden: {
     projectName: 'Community Garden',
     projectLink: '',
@@ -74,7 +54,6 @@ export const projectsData: Record<string, Project> = {
     githubLink: 'https://github.com/jack-crawford-1/garden-map',
   },
 
-  // TO-DO APP PROJECT
   todoapp: {
     projectName: 'Todo App',
     projectLink: 'https://todo-fullstack.pushed.nz/',
@@ -103,7 +82,6 @@ export const projectsData: Record<string, Project> = {
     githubLink: 'https://github.com/jack-crawford-1/fullstack-todo-app',
   },
 
-  // NASA API PROJECT
   nasaapi: {
     projectName: 'NASA API',
     projectLink: '',
@@ -129,7 +107,6 @@ export const projectsData: Record<string, Project> = {
     githubLink: 'https://github.com/jack-crawford-1/nasa-api.git',
   },
 
-  // POKEMON API PROJECT
   pokemonapi: {
     projectName: 'PokemonAPI',
     projectLink: 'https://pokedex-api-sage.vercel.app/',
@@ -152,9 +129,9 @@ export const projectsData: Record<string, Project> = {
       'Vite',
     ],
     githubLink: 'https://github.com/jack-crawford-1/Pokedex',
+    photos: ['/pkdemo3.png', '/pkdemo2.png'],
   },
 
-  // DEVACADEMY GROUP PROJECT
   groupproject: {
     projectName: 'DevAcademy Group Project',
     projectLink: 'https://optimisticweather.pushed.nz/',
@@ -182,7 +159,6 @@ export const projectsData: Record<string, Project> = {
     githubLink: 'https://github.com/tohora-2024/optimisticweather',
   },
 
-  // MINI PIANO APP
   minipiano: {
     projectName: 'Mini Piano using Tone.js',
     projectLink: '',
@@ -200,7 +176,6 @@ export const projectsData: Record<string, Project> = {
     githubLink: 'https://github.com/jack-crawford-1/Piano-app-tonejs-react',
   },
 
-  // FULLSTACK BOILERPLATE PROJECT
   boilerplate: {
     projectName: 'React / Express Boilerplate: Fullstack',
     projectLink: 'https://boilerplate.pushed.nz/',

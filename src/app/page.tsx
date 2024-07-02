@@ -3,7 +3,6 @@
 import HeroText from './components/MainText/HeroText'
 import LinksContainer from './components/Links/LinksContainer'
 import './globals.css'
-import ProjectsLinksContainer from './components/projects/ProjectsLinksContainer'
 
 function Home() {
   return (
@@ -15,7 +14,6 @@ function Home() {
       </div>
       <div className=" w-full max-w-5xl items-center md:ml-10 md:pl-10 font-bold">
         <LinksContainer />
-        {/* <ProjectsLinksContainer /> */}
       </div>
     </main>
   )

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Tooltip from '../utils/Tooltip'
 
 function Github() {
   return (

@@ -2,25 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Tooltip from '../utils/Tooltip'
 
-interface ProjectCardProps {
-  projectName: string
-  projectLink: string
-  imageSrc: string
-  altText: string
-  description: string
-  comments?: string
-  feature1?: string
-  feature2?: string
-  feature3?: string
-  feature4?: string
-  feature5?: string
-  technologies: string[]
-  learnings?: string
-  future?: string
-  githubLink: string
-}
-
-const ProjectCard: React.FC<ProjectCardProps> = ({
+const ProjectCard: React.FC<Project> = ({
   projectName,
   projectLink,
   imageSrc,
@@ -36,11 +18,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   future,
   technologies,
   githubLink,
+  photos,
 }) => {
   const techStack = technologies || []
   const features = [feature1, feature2, feature3, feature4, feature5].filter(
     Boolean
   )
+
+  console.log('photos:', photos)
   return (
     <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
       <h2 className="text-3xl font-bold mb-4">{projectName}</h2>
@@ -73,8 +58,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       )}
       <h3 className="text-2xl font-semibold mb-2">Learnings:</h3>
       <p className="mb-4 leading-relaxed text-gray-300">{learnings}</p>
+      {photos && photos.length > 0 && (
+        <>
+          <div className="flex flex-wrap mt-5 mb-5">
+            {photos.map((photo, index) => (
+              <Image
+                key={index}
+                src={photo}
+                alt={projectName}
+                width={400}
+                height={200}
+                className="rounded-lg m-1"
+              />
+            ))}
+          </div>
+        </>
+      )}
       <h3 className="text-2xl font-semibold mb-2 mt-3">Future plans:</h3>
       <p className="mb-4 leading-relaxed text-gray-300">{future}</p>
+
       <h3 className="text-2xl font-semibold mb-3 mt-3">Tech Used:</h3>
       <ul className="flex flex-wrap mb-4">
         {techStack.map((tech, index) => (
@@ -83,6 +85,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </li>
         ))}
       </ul>
+
       <div className="flex justify-end text-center  items-center pt-5">
         {projectLink && (
           <Tooltip text="Go to demo site">
