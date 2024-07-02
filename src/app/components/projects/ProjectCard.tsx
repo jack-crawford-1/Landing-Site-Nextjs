@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Tooltip from '../utils/Tooltip'
+import Link from 'next/link'
 
 const ProjectCard: React.FC<Project> = ({
   projectName,
@@ -97,15 +98,15 @@ const ProjectCard: React.FC<Project> = ({
 
       <div className="flex justify-end text-center  items-center pt-5">
         <Tooltip text="Back to Projects">
-          <a href={projectLink} target="_blank" rel="noopener noreferrer">
+          <Link href="/projects">
             <Image
               src="/icons/back-arrow.png"
-              alt="deployed site"
+              alt="back to projects"
               width={50}
               height={50}
               className=" mr-4 transform hover:scale-125"
             />
-          </a>
+          </Link>
         </Tooltip>
         {projectLink && (
           <Tooltip text="Go to demo site">
