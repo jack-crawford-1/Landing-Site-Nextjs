@@ -6,19 +6,6 @@ import { projectsData } from '@/app/components/projects/ProjectsData'
 import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
 import Nav from '@/app/components/nav/Nav'
 
-// interface Project {
-//   projectName: string
-//   projectLink: string
-//   imageSrc: string
-//   altText: string
-//   description: string
-//   features?: string
-//   future?: string
-//   comments?: string
-//   technologies: string[]
-//   githubLink: string
-// }
-
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = Object.keys(projectsData).map((projectKey) => ({
     params: { projectname: projectKey },

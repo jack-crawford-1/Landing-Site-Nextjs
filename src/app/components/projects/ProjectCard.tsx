@@ -100,7 +100,7 @@ const ProjectCard: React.FC<Project> = ({
           <Tooltip text="Go to demo site">
             <a href={projectLink} target="_blank" rel="noopener noreferrer">
               <Image
-                src="/appIcon.png"
+                src="/icons/appIcon.png"
                 alt="deployed site"
                 width={50}
                 height={50}
@@ -113,7 +113,7 @@ const ProjectCard: React.FC<Project> = ({
           <Tooltip text="View code">
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
               <Image
-                src="/github-logo.png"
+                src="/icons/github-logo.png"
                 alt="github"
                 width={50}
                 height={50}
