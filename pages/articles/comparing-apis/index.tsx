@@ -1,8 +1,8 @@
 'use client'
 
 import '../../../src/app/globals.css'
-import AxiosCode from '../../../src/app/components/CodeBlocks/AxiosCode'
-import UseQueryCode from '../../../src/app/components/CodeBlocks/UseQueryCode'
+import AxiosCode from '../../../src/app/components/blog/CodeBlocks/AxiosCode'
+import UseQueryCode from '../../../src/app/components/blog/CodeBlocks/UseQueryCode'
 
 function ComparingApis() {
   return (
