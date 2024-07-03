@@ -1,3 +1,6 @@
+import Tooltip from '../utils/Tooltip'
+import Image from 'next/image'
+
 function CV() {
   return (
     <>
