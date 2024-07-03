@@ -2,12 +2,11 @@ import '../../src/app/globals.css'
 import Nav from '../../src/app/components/nav/Nav'
 import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
 import DeveloperLogos from '../../src/app/components/utils/DeveloperLogos'
-import Demo from '../../src/app/components/nav/Demo'
 
 export default function AboutPage() {
   return (
     <div className="flex flex-col bg-slate-800 m-0 items-center w-screen">
-      <Demo />
+      <Nav />
       <div className=" bg-slate-800 text-white">
         <main className="max-w-3xl p-10">
           <h2 className="text-2xl font-bold pt-6 pb-4">About Me</h2>

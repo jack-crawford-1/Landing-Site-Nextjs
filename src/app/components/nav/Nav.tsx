@@ -1,13 +1,39 @@
 import Link from 'next/link'
+import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
 export default function Nav() {
+  const [lastScrollPosition, setLastScrollPosition] = useState(0)
+  const [visible, setVisible] = useState(true)
+
+  const handleScroll = () => {
+    const currentScrollPosition = window.scrollY
+
+    if (currentScrollPosition > lastScrollPosition) {
+      setVisible(false)
+    } else {
+      setVisible(true)
+    }
+
+    setLastScrollPosition(currentScrollPosition)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  })
+
   const router = useRouter()
   const currentPath = router.pathname
 
   return (
-    <nav className="fixed start-0 top-0 w-full bg-slate-800 text-white pt-5">
-      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+    <div
+      className={`bg-slate-800 z-100 w-full h-28 sticky ${
+        visible ? 'top-0' : ''
+      } `}
+    >
+      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center content-center justify-between p-10">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <div className="text-6xl font-extrabold lg:pl-48">
             <span style={{ color: '#87CEFA' }}>J</span>
@@ -30,7 +56,7 @@ export default function Nav() {
               `}
         </style>
 
-        <ul className="mt-4 flex rounded-lg p-4 font-medium md:mt-0 flex-row md:space-x-8 md:p-0 rtl:space-x-reverse">
+        <ul className="mt-4 flex rounded-lg p-4 font-medium md:mt-0 flex-row md:space-x-8 md:p-0 rtl:space-x-reverse text-white">
           {currentPath !== '/projects' && (
             <Link href="/projects">
               <li className="p-2 hover:text-pink-600 hover:scale-110 transform duration-200 ease-in-out">
@@ -52,6 +78,6 @@ export default function Nav() {
           </Link>
         </ul>
       </div>
-    </nav>
+    </div>
   )
 }
