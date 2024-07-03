@@ -7,12 +7,13 @@ import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksConta
 import Link from 'next/link'
 import { projects } from '@/app/components/projects/projectsList'
 import Nav from '../../src/app/components/nav/Nav'
+import Demo from '../../src/app/components/nav/Demo'
 
 export default function Projects() {
   return (
     <div className="bg-slate-800">
-      <Nav />
-      <HeaderArea />
+      <Demo />
+      {/* <HeaderArea /> */}
       <div className="flex flex-row flex-wrap justify-center gap-8 p-8">
         {projects.map((project, index) => (
           <Link href={`/projects/${project.route}`} key={index}>
