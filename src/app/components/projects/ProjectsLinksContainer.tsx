@@ -4,7 +4,7 @@ import CV from '../Links/CV'
 
 function ProjectsLinksContainer() {
   return (
-    <div className="flex flex-col md:flex-row items-center m-1 md:p-10 p-5">
+    <div className="flex flex-row items-center m-1 md:p-0 md:pb-10 md:pt-10 p-5">
       <div className="transform hover:scale-125 duration-200 ease-in-out m-2 order-3 md:order-1">
         <Github />
       </div>
