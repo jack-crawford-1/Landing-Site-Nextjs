@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Home from '../Links/Home'
 
 export default function Nav() {
   const [lastScrollPosition, setLastScrollPosition] = useState(0)

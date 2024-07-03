@@ -34,7 +34,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
   return (
     <>
       <Nav />
-      <div className="p-4 md-pt-10 pt-[150px]  bg-slate-800 flex justify-center items-center min-h-screen">
+      <div className="p-4 md-pt-10 bg-slate-800 flex justify-center items-center min-h-screen">
         <div className="max-w-4xl w-full">
           <ProjectCard
             projectName={project.projectName}

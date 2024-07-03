@@ -2,7 +2,6 @@
 import '../../src/app/globals.css'
 
 import Image from 'next/image'
-import HeaderArea from '@/app/components/projects/HeaderArea'
 import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
 import Link from 'next/link'
 import { projects } from '@/app/components/projects/projectsList'
@@ -10,9 +9,8 @@ import Nav from '../../src/app/components/nav/Nav'
 
 export default function Projects() {
   return (
-    <div className="bg-slate-800">
+    <div className="bg-slate-800 m-0 pb-[10px]">
       <Nav />
-      {/* <HeaderArea /> */}
       <div className="flex flex-row flex-wrap justify-center gap-8 p-8">
         {projects.map((project, index) => (
           <Link href={`/projects/${project.route}`} key={index}>
