@@ -8,15 +8,17 @@ import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksConta
 function ArticlesHome() {
   return (
     <>
-      <div className="bg-black md:border-4 border-white font-inter h-screen">
-        <h1 className="text-5xl text-center p-10 text-white">Blogs</h1>
-        <div className="md:flex md:flex-row md:flex-wrap md:justify-center bg-black">
+      <div className="bg-slate-800 md:border-4 border-white font-inter flex flex-col justify-center content-center items-center">
+        <h1 className="text-5xl text-center p-10 text-white">
+          Articles (in progress)
+        </h1>
+        <div className="bg-slate-800">
           <ArticlesCard {...articlesData.ComparingAPIS} />
           <ArticlesCard {...articlesData.ReactState} />
           <ArticlesCard {...articlesData.NextJS} />
           <ArticlesCard {...articlesData.TailWind} />
         </div>
-        <div className=" w-full max-w-5xl items-center md:ml-10 md:pl-10 font-bold">
+        <div className=" bg-slate-800 w-full items-center md:pl-10 font-bold">
           <ProjectsLinksContainer />
         </div>
       </div>
