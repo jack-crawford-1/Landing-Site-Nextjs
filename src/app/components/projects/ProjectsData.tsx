@@ -2,7 +2,7 @@ export const projectsData: Record<string, Project> = {
   weatherapi: {
     projectName: 'Weather API',
     projectLink: 'https://weather-api.pushed.nz/',
-    imageSrc: 'project/w.png',
+    imageSrc: '/project/w.png',
     altText: 'Weather API Project',
     description:
       'Allows users to see weather forecasts, including current conditions, temperature, and wind data. This project was a chance to practice using external APIs and deploying a live site with included dotenv files. I based the location on my hometown of Wellington, New Zealand and used the MeteoSource API to source the data.',
@@ -29,7 +29,7 @@ export const projectsData: Record<string, Project> = {
   communitygarden: {
     projectName: 'Community Garden',
     projectLink: '',
-    imageSrc: 'project/gardenmap.png',
+    imageSrc: '/project/gardenmap.png',
     altText: 'Community Garden Project',
     description:
       'This was a personal project that allows users to find, share, and manage green spaces or community gardens. This was built during down-time at the DevAcademy bootcamp as a solo project allowing me to practice full-stack development. Included authentication and database management, as well as integrating external APIs for location and information, and mapping services from Google Maps API.',

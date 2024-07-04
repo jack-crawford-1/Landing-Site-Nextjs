@@ -31,7 +31,7 @@ export default function Nav() {
 
   return (
     <div
-      className={`bg-slate-800 z-100 w-full h-fit sticky duration-1000  transition-all ${
+      className={`bg-slate-800 z-100 w-full h-fit sticky duration-700  transition-all ${
         visible ? 'top-0' : '-top-40'
       } `}
     >
@@ -61,14 +61,14 @@ export default function Nav() {
         <ul className="mt-4 flex rounded-lg p-4 font-medium md:mt-0 flex-row md:space-x-8 md:p-0 rtl:space-x-reverse text-white">
           {currentPath !== '/projects' && (
             <Link href="/projects">
-              <li className="p-2 hover:text-pink-600 scale-125 hover:scale-150 transform duration-200 ease-in-out">
+              <li className="p-2 hover:text-pink-600 hover:scale-125 transform duration-200 ease-in-out">
                 <Project />
               </li>
             </Link>
           )}
           {currentPath !== '/about' && (
             <Link href="/about">
-              <li className="p-2 hover:text-pink-600 hover:scale-110 transform duration-200 ease-in-out">
+              <li className="p-4 hover:text-pink-600 scale-110 hover:scale-125 transform duration-200 ease-in-out">
                 <About />
               </li>
             </Link>

@@ -12,7 +12,7 @@ function LinksContainer() {
       {/* <WobbleAnimation /> */}
       <div className="flex flex-wrap md:w-screen flex-row items-center pl-10 md:p-10 m-1 text-xl">
         <Link href="./projects">
-          <div className="transform m-1 scale-125 hover:scale-150 duration-200 ease-in-out text-white px-2 rounded wobble text-xl">
+          <div className="transform m-1  hover:scale-125 duration-200 ease-in-out text-white px-2 rounded wobble text-xl">
             <Project />
           </div>
         </Link>
