@@ -22,9 +22,11 @@ function ProjectsLinksContainer() {
           <Project />
         </div>
       </Link>
-      <div className="transform hover:scale-110 duration-200 ease-in-out text-white px-2 py-2 rounded text-xl m-2">
-        <About />
-      </div>
+      <Link href="/about">
+        <div className="transform hover:scale-110 duration-200 ease-in-out text-white px-2 py-2 rounded text-xl m-2">
+          <About />
+        </div>
+      </Link>
     </div>
   )
 }
