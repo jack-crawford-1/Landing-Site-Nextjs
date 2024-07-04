@@ -14,16 +14,16 @@ function ProjectsLinksContainer() {
       <div className="md:ml-2 transform m-2 hover:scale-110 duration-200 ease-in-out text-white text-xl order-2">
         <Email />
       </div>
-      <div className="transform hover:scale-110 duration-200 ease-in-out text-white px-2 py-2 rounded text-xl m-2 order-1 md:order-2">
+      <div className="transform hover:scale-110 scale-110 duration-200 ease-in-out text-white px-2 py-2 rounded text-xl m-2 order-1 md:order-2">
         <CV />
       </div>
       <Link href="./projects">
-        <div className=" transform hover:scale-110 duration-200 ease-in-out text-white px-2 py-2 rounded text-xl m-2">
+        <div className=" transform hover:scale-150 scale-125 duration-200 ease-in-out text-white px-2 py-2 rounded text-xl m-2">
           <Project />
         </div>
       </Link>
       <Link href="/about">
-        <div className=" transform hover:scale-110 duration-200 ease-in-out text-white px-2 py-2 rounded text-xl m-2">
+        <div className=" transform hover:scale-110  duration-200 ease-in-out text-white px-2 py-2 rounded text-xl m-2">
           <About />
         </div>
       </Link>
