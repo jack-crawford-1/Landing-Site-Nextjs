@@ -2,6 +2,8 @@ import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Home from '../Links/Home'
+import Project from '../Links/Project'
+import About from '../Links/About'
 
 export default function Nav() {
   const [lastScrollPosition, setLastScrollPosition] = useState(0)
@@ -30,7 +32,7 @@ export default function Nav() {
 
   return (
     <div
-      className={`bg-slate-800 z-100 w-full h-28 sticky ${
+      className={`bg-slate-800 z-100 w-full h-fit sticky ${
         visible ? 'top-0' : ''
       } `}
     >
@@ -61,22 +63,17 @@ export default function Nav() {
           {currentPath !== '/projects' && (
             <Link href="/projects">
               <li className="p-2 hover:text-pink-600 hover:scale-110 transform duration-200 ease-in-out">
-                Projects
+                <Project />
               </li>
             </Link>
           )}
           {currentPath !== '/about' && (
             <Link href="/about">
               <li className="p-2 hover:text-pink-600 hover:scale-110 transform duration-200 ease-in-out">
-                About
+                <About />
               </li>
             </Link>
           )}
-          <Link href="/">
-            <li className="p-2 hover:text-pink-600 hover:scale-110 transform duration-200 ease-in-out">
-              Home
-            </li>
-          </Link>
         </ul>
       </div>
     </div>

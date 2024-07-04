@@ -14,13 +14,16 @@ function LinksContainer() {
       <div className="transform m-1 hover:scale-110 duration-200 ease-in-out text-white px-2  rounded  text-xl">
         <Email />
       </div>
-      <div className="transform m-1 hover:scale-110 duration-200 ease-in-out text-white px-2  rounded  text-xl">
-        <About />
-      </div>
-
-      <div className="transform m-1 hover:scale-110 duration-200 ease-in-out text-white px-2  rounded  text-xl">
-        <Project />
-      </div>
+      <Link href="./about">
+        <div className="transform m-1 hover:scale-110 duration-200 ease-in-out text-white px-2  rounded  text-xl">
+          <About />
+        </div>
+      </Link>
+      <Link href="./projects">
+        <div className="transform m-1 hover:scale-110 duration-200 ease-in-out text-white px-2  rounded  text-xl">
+          <Project />
+        </div>
+      </Link>
       <div className="transform m-1 hover:scale-110 duration-200 ease-in-out text-white px-2 rounded  text-xl">
         <CV />
       </div>
