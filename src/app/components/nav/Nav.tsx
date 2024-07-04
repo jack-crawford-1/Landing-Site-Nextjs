@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import Home from '../Links/Home'
 import Project from '../Links/Project'
 import About from '../Links/About'
 
@@ -32,11 +31,11 @@ export default function Nav() {
 
   return (
     <div
-      className={`bg-slate-800 z-100 w-full h-fit sticky ${
-        visible ? 'top-0' : ''
+      className={`bg-slate-800 z-100 w-full h-fit sticky duration-1000  transition-all ${
+        visible ? 'top-0' : '-top-40'
       } `}
     >
-      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center content-center justify-between p-10">
+      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center content-center justify-between p-3">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <div className="text-6xl font-extrabold lg:pl-48">
             <span style={{ color: '#87CEFA' }}>J</span>

@@ -13,7 +13,7 @@ export default function DeveloperLogos() {
             alt="React.js Logo"
             width={50}
             height={50}
-            className="m-2"
+            className="m-2 "
           />
         </Tooltip>
         <Tooltip text="Next.js">
