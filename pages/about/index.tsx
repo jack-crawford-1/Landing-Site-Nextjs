@@ -1,61 +1,76 @@
 import '../../src/app/globals.css'
-import Nav from '../../src/app/components/nav/Nav'
-import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
 import DeveloperLogos from '../../src/app/components/utils/DeveloperLogos'
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col bg-slate-800 m-0 items-center w-screen">
-      <Nav />
-      <div className=" bg-slate-800 text-white">
-        <main className="max-w-3xl p-10">
-          <h2 className="text-2xl font-bold pt-6 pb-4">About Me</h2>
-          <p className="leading-relaxed text-gray-300 mb-3">
-            Hey there! I&apos;m Jack Crawford, a full stack software developer
-            from New Zealand. My journey began in account management and
-            marketing, but I found my true passion in coding. With a solid
-            foundation in React, TypeScript, and Node.js, I enjoy building
-            applications that are both functional and user-friendly.{' '}
-          </p>
-          <p className="leading-relaxed text-gray-300">
-            {' '}
-            I&apos;m focused on creating inclusive digital experiences and
-            continually learning new technologies. Recently, I&apos;ve worked on
-            projects like a mini piano app using Tone.js and React, and a
-            community garden app with React/Vite and Prisma. I love diving into
-            new challenges and expanding my skills with every project.
-          </p>
-          <h2 className="text-2xl font-bold pt-8 pb-4">Skills</h2>
-          <div className="pl-3 text-gray-300 leading-10">
-            <p>
-              <span className="font-bold">Frontend:</span> React, JavaScript,
-              TypeScript, Next.js, HTML/CSS, Tailwind CSS
+    <div className="flex flex-col bg-slate-200 m-0 items-center w-screen p-5">
+      <div className=" bg-slate-200 text-slate-800">
+        <main className="max-w-5xl">
+          <div className="text-left">
+            <h2 className="text-2xl font-bold text-slate-800 pt-6 pb-4">
+              About Me
+            </h2>
+            <p className="leading-relaxed text-slate-600 mb-6 max-w-5xl">
+              With over 10 years of experience as an account manager, I have
+              worked with and supported people from all walks of life. During
+              this time, I built a reputation for having a solid work ethic and
+              a curiosity that drives me to delve into the details of problems
+              to find creative solutions.
             </p>
-            <p>
-              <span className="font-bold">Backend:</span> Node.js, Express, REST
-              APIs
+            <p className="leading-relaxed text-slate-600 mb-6 max-w-5xl">
+              This year, I decided to follow my passion for technology and
+              transition into a new career, enrolling in Dev Academy&apos;s
+              Software Development Bootcamp, a rigorous and immersive programme
+              which I graduated from in May. Now, I&apos;m excited to combine my
+              account management experience with my new technical skills in a
+              fresh role.
             </p>
-            <p>
-              <span className="font-bold">Database:</span> SQLite, Prisma, Knex
-            </p>
-            <p>
-              <span className="font-bold">Tools:</span> Git/GitHub, Docker,
-              Vercel
-            </p>
-            <p>
-              <span className="font-bold">Other:</span> JWTs and OAuth2, Agile
-              Methodologies, Project Planning, Leadership
+            <p className="leading-relaxed text-slate-600 max-w-5xl">
+              I&apos;m looking forward to joining a dynamic team where I can
+              contribute to innovative projects and keep growing as a software
+              developer.
             </p>
           </div>
-
-          <DeveloperLogos />
-
-          <h2 className="text-2xl font-bold pt-4 pb-4">Experience</h2>
+          <h2 className="text-2xl font-bold pt-8 pb-3">Skills</h2>
+          <div className=" text-slate-600 leading-8">
+            <p>
+              <span className="font-bold">Client:</span> React, JavaScript,
+              TypeScript, Next.js, HTML/CSS, Tailwind CSS, Vite
+            </p>
+            <p>
+              <span className="font-bold">Server:</span> Node.js, Express
+            </p>
+            <p>
+              <span className="font-bold">Database:</span> PostgreSQL, SQLite,
+              Prisma, Knex
+            </p>
+            <p>
+              <span className="font-bold">Web Services:</span> REST APIs, Axios
+            </p>
+            <p>
+              <span className="font-bold">Version Control:</span> Git/GitHub
+            </p>
+            <p>
+              <span className="font-bold">Testing:</span> Mocha, Supertest,
+              Vitest, Nock
+            </p>
+            <p>
+              <span className="font-bold">Auth:</span> JWTs, OAuth2, Dotenv
+            </p>
+            <p>
+              <span className="font-bold">Professional Development:</span> Agile
+              Methodologies, Project Planning
+            </p>
+          </div>
+          <div className="mt-10 mb-10">
+            <DeveloperLogos />
+          </div>
+          <h2 className="text-2xl font-bold mt-8 mb-3">Experience</h2>
           <h3 className="text-xl font-medium mb-2 mt-4">
             Student Developer, Dev Academy Aotearoa; <br /> Wellington, NZ{' '}
             <span className="text-md font-medium">(Jan 2024 - May 2024)</span>
           </h3>
-          <ul className="pl-4 mb-2 list-disc text-gray-300">
+          <ul className="pl-4 mb-2 list-disc text-slate-600">
             <li>
               Completed 700+ hours of coding in JavaScript, TypeScript, React,
               Git, GitHub, REST APIs.
@@ -70,7 +85,7 @@ export default function AboutPage() {
             Account Manager, Trade Me; <br />
             Wellington, NZ (Oct 2020 - Dec 2023)
           </h3>
-          <ul className="pl-4 mb-2 list-disc text-gray-300">
+          <ul className="pl-4 mb-2 list-disc text-slate-600">
             <li className="">
               Managed advertising and recruitment strategies for high-profile
               businesses, enhancing client engagement and outcomes.
@@ -90,7 +105,7 @@ export default function AboutPage() {
             Career Break <br />
             (Feb 2020 - Sep 2020)
           </h3>
-          <ul className="pl-4 mb-2 list-disc text-gray-300">
+          <ul className="pl-4 mb-2 list-disc text-slate-600">
             <li>
               Relocated to New Zealand from abroad to spend time with and
               support family.
@@ -101,7 +116,7 @@ export default function AboutPage() {
             Account Manager, Lead Chat; <br />
             Melbourne, AUS (Nov 2016 - Dec 2019)
           </h3>
-          <ul className="pl-4 mb-2 list-disc text-gray-300">
+          <ul className="pl-4 mb-2 list-disc text-slate-600">
             <li>
               Effectively managed client needs across multiple time zones
               including the US, UK, and UAE.
@@ -119,7 +134,7 @@ export default function AboutPage() {
             Digital Sales Manager, Smudge; <br />
             Melbourne, AUS (Jun 2016 - Dec 2016)
           </h3>
-          <ul className="pl-4 mb-2 list-disc text-gray-300">
+          <ul className="pl-4 mb-2 list-disc text-slate-600">
             <li>
               Introduced display advertising as a new product to complement the
               existing print business.
@@ -134,7 +149,7 @@ export default function AboutPage() {
             Key Accounts Manager, Zomato; <br />
             Melbourne, AUS (Jan 2015 - Jun 2016)
           </h3>
-          <ul className="pl-4 mb-2 list-disc text-gray-300">
+          <ul className="pl-4 mb-2 list-disc text-slate-600">
             <li>
               In a start-up environment as the first sales hire in Australia,
               exceeded sales targets while recruiting, training, and mentoring
@@ -149,7 +164,7 @@ export default function AboutPage() {
             Accounts Manager, NewsCorp; <br />
             Melbourne, AUS (Jan 2015 - Jun 2016)
           </h3>
-          <ul className="pl-4 mb-2 list-disc text-gray-300">
+          <ul className="pl-4 mb-2 list-disc text-slate-600">
             <li>
               Sold print and display advertising across multiple print and
               digital mastheads.
@@ -157,7 +172,6 @@ export default function AboutPage() {
             <li>Reacquired lapsed clients with a high win-back rate.</li>
           </ul>
         </main>
-        <ProjectsLinksContainer />
       </div>
     </div>
   )

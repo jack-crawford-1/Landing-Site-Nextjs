@@ -1,7 +1,7 @@
 import React from 'react'
 import { ColourfulParagraph } from './ColourfulParagraph'
 
-function HeroText() {
+export function HeroText() {
   return (
     <>
       <div>
