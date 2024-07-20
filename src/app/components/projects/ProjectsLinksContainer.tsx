@@ -3,7 +3,7 @@ import Github from '../Links/Github'
 import CV from '../Links/CV'
 
 function ProjectsLinksContainer() {
-  const scrollToProjectsSection = (e) => {
+  const scrollToProjectsSection = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     const projectsSection = document.getElementById('projects-section')
     if (projectsSection) {
@@ -11,7 +11,7 @@ function ProjectsLinksContainer() {
     }
   }
 
-  const scrollToAboutSection = (e) => {
+  const scrollToAboutSection = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     const aboutSection = document.getElementById('about-section')
     if (aboutSection) {
