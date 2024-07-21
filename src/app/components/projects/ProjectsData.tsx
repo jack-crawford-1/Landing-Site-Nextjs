@@ -1,30 +1,30 @@
 export const projectsData: Record<string, Project> = {
-  weatherapi: {
-    projectName: 'Weather API',
-    projectLink: 'https://weather-api.pushed.nz/',
-    imageSrc: '/project/w.png',
-    altText: 'Weather API Project',
-    description:
-      'Allows users to see weather forecasts, including current conditions, temperature, and wind data. This project was a chance to practice using external APIs and deploying a live site with included dotenv files. I based the location on my hometown of Wellington, New Zealand and used the MeteoSource API to source the data.',
-    comments: '',
-    learnings:
-      'It was a good way to practice accessing data at various endpoints and using using Superagent to access the data from the backend. I was interested in deploying the site and using dotenv to keep my API key secure and how I would go about linking the api key in production. I also wanted to included a night mode toggle and spent a bit of time on the CSS to include a custom background. This ended up being a fun back and forward setting up state and using the ternary operator to change the background and text colours.',
-    future:
-      'I would like to clean up the UI on mobile devices and add search functionality for other locations. I would also like to add the ability to log in and save a users favourite location',
-    feature1: '',
-    technologies: [
-      'React',
-      'Express',
-      'superagent',
-      'TypeScript',
-      'Tailwind CSS',
-      'Weather API',
-      'React-spinner',
-      'Vite',
-    ],
-    githubLink: 'https://github.com/jack-crawford-1/weather-api',
-    photos: ['/project/wd2.png', '/project/wd1.png'],
-  },
+  // weatherapi: {
+  //   projectName: 'Weather API',
+  //   projectLink: 'https://weather-api.pushed.nz/',
+  //   imageSrc: '/project/w.png',
+  //   altText: 'Weather API Project',
+  //   description:
+  //     'Allows users to see weather forecasts, including current conditions, temperature, and wind data. This project was a chance to practice using external APIs and deploying a live site with included dotenv files. I based the location on my hometown of Wellington, New Zealand and used the MeteoSource API to source the data.',
+  //   comments: '',
+  //   learnings:
+  //     'It was a good way to practice accessing data at various endpoints and using using Superagent to access the data from the backend. I was interested in deploying the site and using dotenv to keep my API key secure and how I would go about linking the api key in production. I also wanted to included a night mode toggle and spent a bit of time on the CSS to include a custom background. This ended up being a fun back and forward setting up state and using the ternary operator to change the background and text colours.',
+  //   future:
+  //     'I would like to clean up the UI on mobile devices and add search functionality for other locations. I would also like to add the ability to log in and save a users favourite location',
+  //   feature1: '',
+  //   technologies: [
+  //     'React',
+  //     'Express',
+  //     'superagent',
+  //     'TypeScript',
+  //     'Tailwind CSS',
+  //     'Weather API',
+  //     'React-spinner',
+  //     'Vite',
+  //   ],
+  //   githubLink: 'https://github.com/jack-crawford-1/weather-api',
+  //   photos: ['/project/wd2.png', '/project/wd1.png'],
+  // },
 
   communitygarden: {
     projectName: 'Community Garden',
@@ -56,111 +56,111 @@ export const projectsData: Record<string, Project> = {
     photos: ['/project/gm1.png', '/project/gm2.png'],
   },
 
-  todoapp: {
-    projectName: 'Todo App',
-    projectLink: 'https://todo-fullstack.pushed.nz/',
-    imageSrc: '/project/todo-project.png',
-    altText: 'Todo App Project',
-    description:
-      ' The Todo app allow for full CRUD operations on a database with user authentication and protected routes. This was my first time using auth0 for authentication and was a great opportunity to practice full-stack development with React and Express. The app wil show only todos for the specific user that is logged in.',
-    comments: '',
-    learnings:
-      'I learnt a lot about setting up and managing authentication with Auth0 and integrating it with a full-stack application. It was also a good chance to practice creating protected routes and making sure that users can only access their own data. I spent some time working on the UI to make it clean and user-friendly, and it was interesting to see how different libraries like React Query can simplify data fetching and state management.',
-    future:
-      'In the future   (should have probably called this section "to do"...), I would like to add the ability to set reminders for todos and integrate with a calendar API as well as checking off a task as complete without deleting fully.',
+  // todoapp: {
+  //   projectName: 'Todo App',
+  //   projectLink: 'https://todo-fullstack.pushed.nz/',
+  //   imageSrc: '/project/todo-project.png',
+  //   altText: 'Todo App Project',
+  //   description:
+  //     ' The Todo app allow for full CRUD operations on a database with user authentication and protected routes. This was my first time using auth0 for authentication and was a great opportunity to practice full-stack development with React and Express. The app wil show only todos for the specific user that is logged in.',
+  //   comments: '',
+  //   learnings:
+  //     'I learnt a lot about setting up and managing authentication with Auth0 and integrating it with a full-stack application. It was also a good chance to practice creating protected routes and making sure that users can only access their own data. I spent some time working on the UI to make it clean and user-friendly, and it was interesting to see how different libraries like React Query can simplify data fetching and state management.',
+  //   future:
+  //     'In the future   (should have probably called this section "to do"...), I would like to add the ability to set reminders for todos and integrate with a calendar API as well as checking off a task as complete without deleting fully.',
 
-    feature1: '',
-    technologies: [
-      'React',
-      'Express',
-      'express-jwt',
-      'auth0',
-      'TypeScript',
-      'sqlite3',
-      'superagent',
-      'react-query',
-      'Vite',
-    ],
-    githubLink: 'https://github.com/jack-crawford-1/fullstack-todo-app',
-  },
+  //   feature1: '',
+  //   technologies: [
+  //     'React',
+  //     'Express',
+  //     'express-jwt',
+  //     'auth0',
+  //     'TypeScript',
+  //     'sqlite3',
+  //     'superagent',
+  //     'react-query',
+  //     'Vite',
+  //   ],
+  //   githubLink: 'https://github.com/jack-crawford-1/fullstack-todo-app',
+  // },
 
-  nasaapi: {
-    projectName: 'NASA API',
-    projectLink: '',
-    imageSrc: '/project/nasa-img.png',
-    altText: 'Nasa API Project',
-    description:
-      'This app allows users to view the Image Of The Day sourced from the NASA API with React and TypeScript. It was a fun way to practice using external APIs and a good excuse to look at pictures of space.',
-    comments: '',
-    learnings:
-      'I learnt that that NASA takes some epic pictures of space! I also spent some time making sure the API key in use with secure if the app was to be deployed in future. I was interested in using Superagent to fetch the data from the backend and how tokens could be used to access the data. Typescript came in handy when accessing the data and making sure the data was in the correct format and helped me get my head around some of the complex data structures available.',
-    future:
-      'I would like to add a search function to find images from a specific date which would involve introducing a filer. I would also like to add a way to save images to a user profile and maybe add a way to share images with other users. The styling is also very basic so I would like to spruce that up a bit.',
-    feature1: '',
-    technologies: [
-      'React',
-      'Express',
-      'TypeScript',
-      'NASA API',
-      'Superagent',
-      'Dotenv',
-      'Vite',
-    ],
-    githubLink: 'https://github.com/jack-crawford-1/nasa-api.git',
-  },
+  // nasaapi: {
+  //   projectName: 'NASA API',
+  //   projectLink: '',
+  //   imageSrc: '/project/nasa-img.png',
+  //   altText: 'Nasa API Project',
+  //   description:
+  //     'This app allows users to view the Image Of The Day sourced from the NASA API with React and TypeScript. It was a fun way to practice using external APIs and a good excuse to look at pictures of space.',
+  //   comments: '',
+  //   learnings:
+  //     'I learnt that that NASA takes some epic pictures of space! I also spent some time making sure the API key in use with secure if the app was to be deployed in future. I was interested in using Superagent to fetch the data from the backend and how tokens could be used to access the data. Typescript came in handy when accessing the data and making sure the data was in the correct format and helped me get my head around some of the complex data structures available.',
+  //   future:
+  //     'I would like to add a search function to find images from a specific date which would involve introducing a filer. I would also like to add a way to save images to a user profile and maybe add a way to share images with other users. The styling is also very basic so I would like to spruce that up a bit.',
+  //   feature1: '',
+  //   technologies: [
+  //     'React',
+  //     'Express',
+  //     'TypeScript',
+  //     'NASA API',
+  //     'Superagent',
+  //     'Dotenv',
+  //     'Vite',
+  //   ],
+  //   githubLink: 'https://github.com/jack-crawford-1/nasa-api.git',
+  // },
 
-  pokemonapi: {
-    projectName: 'PokemonAPI',
-    projectLink: 'https://pokedex-api-sage.vercel.app/',
-    imageSrc: '/project/pokemon-project.png',
-    altText: 'Pokemon Project',
-    description:
-      'This app allows users to view detailed information about their favorite Pokémon. Built with React Router and the Pokémon API, and deployed via Vercel. Pokémon was huge when I was a kid, and if 10-year-old me knew how to code, this is definitely what I would have made',
-    comments: ' ',
-    learnings:
-      'I was keen to try deploying a React app to Vercel to compare it with their native Next.js deployment. This project was a great way to practice using React Router to navigate between pages and pass data between components. Plus, I wanted to hone my skills in fetching data from APIs, and the Pokémon API seemed like a fun and engaging resource to work with.',
-    future:
-      'The current CSS isnt very user-friendly on smaller screens, so a big goal would be to fix the styling to make it more responsive. I also want to add more interactive features to the site. One idea is to gamify it by incorporating some kind of battle system that leverages the Pokémon stats. Theres heaps of potential to make the site more engaging but Im not sure if I will return to this in the short term with new projects on the go.',
-    feature1: '',
-    technologies: [
-      'React',
-      'Express',
-      'TypeScript',
-      'Poke API',
-      'React Router',
-      'Vite',
-    ],
-    githubLink: 'https://github.com/jack-crawford-1/Pokedex',
-    photos: ['/project/pkdemo3.png', '/project/pkdemo2.png'],
-  },
+  // pokemonapi: {
+  //   projectName: 'PokemonAPI',
+  //   projectLink: 'https://pokedex-api-sage.vercel.app/',
+  //   imageSrc: '/project/pokemon-project.png',
+  //   altText: 'Pokemon Project',
+  //   description:
+  //     'This app allows users to view detailed information about their favorite Pokémon. Built with React Router and the Pokémon API, and deployed via Vercel. Pokémon was huge when I was a kid, and if 10-year-old me knew how to code, this is definitely what I would have made',
+  //   comments: ' ',
+  //   learnings:
+  //     'I was keen to try deploying a React app to Vercel to compare it with their native Next.js deployment. This project was a great way to practice using React Router to navigate between pages and pass data between components. Plus, I wanted to hone my skills in fetching data from APIs, and the Pokémon API seemed like a fun and engaging resource to work with.',
+  //   future:
+  //     'The current CSS isnt very user-friendly on smaller screens, so a big goal would be to fix the styling to make it more responsive. I also want to add more interactive features to the site. One idea is to gamify it by incorporating some kind of battle system that leverages the Pokémon stats. Theres heaps of potential to make the site more engaging but Im not sure if I will return to this in the short term with new projects on the go.',
+  //   feature1: '',
+  //   technologies: [
+  //     'React',
+  //     'Express',
+  //     'TypeScript',
+  //     'Poke API',
+  //     'React Router',
+  //     'Vite',
+  //   ],
+  //   githubLink: 'https://github.com/jack-crawford-1/Pokedex',
+  //   photos: ['/project/pkdemo3.png', '/project/pkdemo2.png'],
+  // },
 
-  groupproject: {
-    projectName: 'DevAcademy Group Project',
-    projectLink: 'https://optimisticweather.pushed.nz/',
-    imageSrc: '/project/ow.png',
-    altText: 'Group Project',
-    description:
-      'This was our final group project during the DevAcademy bootcamp, a weather app that allows users to find activities and events for a specific location based on the weather forecast. This was build over 5 days with a team of 4 developers and was a great opportunity to practice working in an agiile environment based on real-world conditions where we problem solved as a group and worked on a shared codebase using git and GitHub',
-    comments: '',
-    learnings:
-      'Being a group project with a tight deadline, we had to be very organised and communicate well to ensure that everyone was on the same page. We used GitHub projects to manage tasks and issues and had daily standups to check in on progress and discuss any blockers. Some of the biggest challenges were integrating the different parts of the app, such as the weather API and the EventFinda API, and ensuring that the data was displayed correctly on the front end. We had a few merge conflicts which ended up being a great way to learn how to approach future group projects and commit strategies.',
-    future:
-      'With the course finished, I hope I get an opportunity to work with my classmates again to build out the AI side to better recommend activities as well as getting more detailed information from the EventFinder API. Either way, it ended up being a great experience and I learnt a lot about working in a team and how to manage a project with multiple moving parts.',
-    feature1: '',
-    technologies: [
-      'React',
-      'Express',
-      'Knex',
-      'sqlite3',
-      'TypeScript',
-      'openai',
-      'Weather API',
-      'EventFinda API',
-      'supertest',
-    ],
-    githubLink: 'https://github.com/tohora-2024/optimisticweather',
-    photos: ['/project/gp1.png', '/project/gp2.png'],
-  },
+  // groupproject: {
+  //   projectName: 'DevAcademy Group Project',
+  //   projectLink: 'https://optimisticweather.pushed.nz/',
+  //   imageSrc: '/project/ow.png',
+  //   altText: 'Group Project',
+  //   description:
+  //     'This was our final group project during the DevAcademy bootcamp, a weather app that allows users to find activities and events for a specific location based on the weather forecast. This was build over 5 days with a team of 4 developers and was a great opportunity to practice working in an agiile environment based on real-world conditions where we problem solved as a group and worked on a shared codebase using git and GitHub',
+  //   comments: '',
+  //   learnings:
+  //     'Being a group project with a tight deadline, we had to be very organised and communicate well to ensure that everyone was on the same page. We used GitHub projects to manage tasks and issues and had daily standups to check in on progress and discuss any blockers. Some of the biggest challenges were integrating the different parts of the app, such as the weather API and the EventFinda API, and ensuring that the data was displayed correctly on the front end. We had a few merge conflicts which ended up being a great way to learn how to approach future group projects and commit strategies.',
+  //   future:
+  //     'With the course finished, I hope I get an opportunity to work with my classmates again to build out the AI side to better recommend activities as well as getting more detailed information from the EventFinder API. Either way, it ended up being a great experience and I learnt a lot about working in a team and how to manage a project with multiple moving parts.',
+  //   feature1: '',
+  //   technologies: [
+  //     'React',
+  //     'Express',
+  //     'Knex',
+  //     'sqlite3',
+  //     'TypeScript',
+  //     'openai',
+  //     'Weather API',
+  //     'EventFinda API',
+  //     'supertest',
+  //   ],
+  //   githubLink: 'https://github.com/tohora-2024/optimisticweather',
+  //   photos: ['/project/gp1.png', '/project/gp2.png'],
+  // },
 
   minipiano: {
     projectName: 'Mini Piano using Tone.js',

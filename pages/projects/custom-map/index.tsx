@@ -2,10 +2,9 @@ import '../../../src/app/globals.css'
 import { CopyBlock, obsidian } from 'react-code-blocks'
 import Image from 'next/image'
 import Nav from '@/app/components/nav/Nav'
-import Github from '@/app/components/Links/Github'
 import Tooltip from '@/app/components/utils/Tooltip'
 
-export default function Demo() {
+export default function CustomMaps() {
   return (
     <>
       <Nav />
@@ -14,31 +13,45 @@ export default function Demo() {
           <h1 className="text-5xl font-bold pb-10 pt-10 text-left">
             Building a custom map with GeoJSON and Google Maps
           </h1>
-          <Tooltip className="text-xs" text="See Code">
-            <a
-              href="https://github.com/jack-crawford-1/Trail-Keeper-App"
-              target="_blank"
-            >
-              <Image
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
-                alt="github"
-                width={50}
-                height={50}
-              />
-            </a>
-          </Tooltip>
 
-          <h2 className="text-2xl pl-2 font-bold pb-5 pt-5">What I used:</h2>
+          <div className="flex items-center pb-5">
+            <Tooltip className="text-xs" text="See Source Code On GitHub">
+              <a
+                href="https://github.com/jack-crawford-1/Trail-Keeper-App"
+                target="_blank"
+                className="flex items-center"
+              >
+                <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                  alt="github"
+                  width={50}
+                  height={50}
+                />
+                <div className="ml-2 justify-center content-center py-1 w-fit rounded px-6  bg-slate-800 text-white">
+                  See code
+                </div>
+              </a>
+            </Tooltip>
+          </div>
+
+          <h2 className="text-2xl font-bold pb-5 pt-5">What I used:</h2>
           <ul className="list-disc list-inside pb-5">
-            <li>Google Maps for the base map</li>
             <li>
-              GeoJSON from the Department Of Conservation for map markers and
-              routes
+              <span className="font-semibold">Google Maps</span> for the base
+              map
             </li>
             <li>
-              Proj4 library for converting GeoJSON coordinates for Google Maps
+              <span className="font-semibold"> GeoJSON</span> from the
+              Department Of Conservation for map markers and routes
             </li>
-            <li>API from LINZ for topographical overlay</li>
+            <li>
+              <span className="font-semibold">Proj4</span> Javascript library
+              for converting GeoJSON coordinates for Google Maps
+            </li>
+            <li>
+              <span className="font-semibold">API from LINZ</span> for NZ
+              topographical map overlay
+            </li>
           </ul>
           <p className="max-w-[800px]">
             Using the Google Maps API as my base map, I set up a container style
@@ -88,9 +101,7 @@ loader
             </div>
           </div>
 
-          <h2 className="text-3xl pl-2 font-bold pb-5 pt-7">
-            Getting the data
-          </h2>
+          <h2 className="text-3xl font-bold pb-5 pt-7">Getting the data</h2>
           <p className="max-w-[800px]">
             Between DOC and LINZ, there were a variety of ways I could access
             the data I was looking to visualise in my app. DOC had endpoints for
@@ -155,7 +166,7 @@ loader
             className="pb-10 pt-5 rounded-lg"
           />
 
-          <h2 className="text-3xl pl-2 font-bold pb-5 pt-5">Map Markers</h2>
+          <h2 className="text-3xl font-bold pb-5 pt-5">Map Markers</h2>
           <p className="max-w-[800px] pb-3">
             For the markers themselves, I had way more options to choose from
             with the potential file sizes being much smaller, meaning I could
@@ -195,7 +206,7 @@ loader
             understand the data (being in JSON format) compared to some of the
             more abstract layers.
           </p>
-          <h2 className="text-3xl pl-2 font-bold pb-5 pt-10">
+          <h2 className="text-3xl font-bold pb-5 pt-10">
             Routes, Controllers and Thunderclient
           </h2>
           <p className="max-w-[800px] pb-3">
@@ -218,7 +229,7 @@ loader
             height={300}
             className="pb-10 pt-5 rounded-lg"
           />
-          <h2 className="text-3xl pl-2 font-bold pb-5 pt-5">Front End</h2>
+          <h2 className="text-3xl font-bold pb-5 pt-5">Front End</h2>
           <p className="max-w-[800px]">
             When it came time to fetching the data and displaying it on my map,
             I encountered an issue with the coordinates, ending up with no
@@ -345,7 +356,7 @@ marker.addListener('click', () => {alert(feature.properties.name)`}
             </div>
           </div>
 
-          <h2 className="text-3xl pl-2 font-bold pb-5 pt-10">Up Next</h2>
+          <h2 className="text-3xl font-bold pb-5 pt-10">Up Next</h2>
           <p className="max-w-[800px]">
             The goal of writing about my process, and building the app in the
             first place, was to challenge myself to learn about new techniques

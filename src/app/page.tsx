@@ -5,6 +5,7 @@ import HeroText from './components/MainText/HeroText'
 import Projects from '../../pages/projects'
 import ProjectsLinksContainer from './components/projects/ProjectsLinksContainer'
 import About from '../../pages/about'
+import AboutSnippet from './components/about/AboutSnippet'
 
 function Home() {
   return (
@@ -15,10 +16,13 @@ function Home() {
         <HeroText />
       </div>
       <ProjectsLinksContainer />
+      <div id="about-section">
+        <AboutSnippet />
+      </div>
       <div id="projects-section">
         <Projects />
       </div>
-      <div id="about-section">
+      <div id="experience-section">
         <About />
       </div>
 

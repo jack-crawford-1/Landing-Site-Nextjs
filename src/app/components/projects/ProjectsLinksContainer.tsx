@@ -19,6 +19,14 @@ function ProjectsLinksContainer() {
     }
   }
 
+  const scrollToExperiencetSection = (e: { preventDefault: () => void }) => {
+    e.preventDefault()
+    const experienceSection = document.getElementById('experience-section')
+    if (experienceSection) {
+      experienceSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <div className="flex flex-row flex-wrap justify-center items-center m-1 md:p-0 md:pb-10 md:pt-10 p-5">
       <div className="md:ml-2 transform m-2 hover:scale-110 duration-200 ease-in-out text-white text-xl order-2">
@@ -31,6 +39,13 @@ function ProjectsLinksContainer() {
         <CV />
       </div>
       <a
+        href="#about-section"
+        onClick={scrollToAboutSection}
+        className="transform hover:scale-110  duration-200 ease-in-out text-white px-2 py-2 rounded text-xl m-2"
+      >
+        About
+      </a>
+      <a
         href="#projects-section"
         onClick={scrollToProjectsSection}
         className="transform hover:scale-125 duration-200 ease-in-out text-white px-2 py-2 rounded text-xl m-2"
@@ -39,10 +54,10 @@ function ProjectsLinksContainer() {
       </a>
       <a
         href="#about-section"
-        onClick={scrollToAboutSection}
+        onClick={scrollToExperiencetSection}
         className="transform hover:scale-110  duration-200 ease-in-out text-white px-2 py-2 rounded text-xl m-2"
       >
-        About
+        Skills
       </a>
     </div>
   )

@@ -6,31 +6,6 @@ export default function AboutPage() {
     <div className="flex flex-col bg-slate-200 m-0 items-center w-screen p-5">
       <div className=" bg-slate-200 text-slate-800">
         <main className="max-w-5xl">
-          <div className="text-left">
-            <h2 className="text-2xl font-bold text-slate-800 pt-6 pb-4">
-              About Me
-            </h2>
-            <p className="leading-relaxed text-slate-600 mb-6 max-w-5xl">
-              With over 10 years of experience as an account manager, I have
-              worked with and supported people from all walks of life. During
-              this time, I built a reputation for having a solid work ethic and
-              a curiosity that drives me to delve into the details of problems
-              to find creative solutions.
-            </p>
-            <p className="leading-relaxed text-slate-600 mb-6 max-w-5xl">
-              This year, I decided to follow my passion for technology and
-              transition into a new career, enrolling in Dev Academy&apos;s
-              Software Development Bootcamp, a rigorous and immersive programme
-              which I graduated from in May. Now, I&apos;m excited to combine my
-              account management experience with my new technical skills in a
-              fresh role.
-            </p>
-            <p className="leading-relaxed text-slate-600 max-w-5xl">
-              I&apos;m looking forward to joining a dynamic team where I can
-              contribute to innovative projects and keep growing as a software
-              developer.
-            </p>
-          </div>
           <h2 className="text-2xl font-bold pt-8 pb-3">Skills</h2>
           <div className=" text-slate-600 leading-8">
             <p>
@@ -62,7 +37,7 @@ export default function AboutPage() {
               Methodologies, Project Planning
             </p>
           </div>
-          <div className="mt-10 mb-10">
+          <div className="mt-20 mb-20">
             <DeveloperLogos />
           </div>
           <h2 className="text-2xl font-bold mt-8 mb-3">Experience</h2>

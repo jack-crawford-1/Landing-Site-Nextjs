@@ -8,7 +8,10 @@ import { projects } from '@/app/components/projects/projectsList'
 export default function Projects() {
   return (
     <>
-      <div className=" p-6 bg-slate-800">
+      <div className=" p-6 bg-slate-800 pb-20 pt-10">
+        <h2 className="text-2xl font-bold text-slate-200 pb-10 md:pl-40">
+          Projects
+        </h2>
         <div className="flex flex-row flex-wrap justify-center gap-8">
           {projects.map((project, index) => (
             <Link href={`/projects/${project.route}`} key={index}>

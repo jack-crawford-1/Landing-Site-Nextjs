@@ -45,31 +45,18 @@ export default function Nav() {
           </div>
         </a>
 
-        <style>
-          {`
-              .gradient-outline {
-                color: #1e293b;
-                text-shadow: 
-                  -1px -1px 0 #eeeee4,  
-                  1px -1px 0 #eeeee4,
-                  -1px 1px 0 #eeeee4,
-                  1px 1px 0 #eeeee4;
-              }
-              `}
-        </style>
-
         <ul className="mt-4 flex rounded-lg p-4 font-medium md:mt-0 flex-row md:space-x-8 md:p-0 rtl:space-x-reverse text-white">
           {currentPath !== '/projects' && (
             <Link href="/projects">
               <li className="p-2 hover:text-pink-600 hover:scale-125 transform duration-200 ease-in-out">
-                <Project />
+                Projects
               </li>
             </Link>
           )}
           {currentPath !== '/about' && (
             <Link href="/about">
-              <li className="p-4 hover:text-pink-600 scale-110 hover:scale-125 transform duration-200 ease-in-out">
-                <About />
+              <li className="p-2 hover:text-pink-600 scale-110 hover:scale-125 transform duration-200 ease-in-out">
+                About
               </li>
             </Link>
           )}
