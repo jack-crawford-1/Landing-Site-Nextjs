@@ -3,7 +3,7 @@ export const projects = [
     image: '/blog/dashboard.png',
     alt: 'Custom Map',
     title: 'Hiking App: Currently Developing',
-    route: 'custom-map',
+    route: '/trail-keeper/custom-map',
   },
   {
     image: '/project/gardenmap.png',

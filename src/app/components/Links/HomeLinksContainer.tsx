@@ -1,8 +1,8 @@
-import Email from '../Links/Email'
-import Github from '../Links/Github'
-import CV from '../Links/CV'
+import Email from './icon-links/Email'
+import Github from './icon-links/Github'
+import CV from './icon-links/CV'
 
-function ProjectsLinksContainer() {
+export default function HomeLinksContainer() {
   const scrollToProjectsSection = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     const projectsSection = document.getElementById('projects-section')
@@ -28,7 +28,7 @@ function ProjectsLinksContainer() {
   }
 
   return (
-    <div className="flex flex-row flex-wrap justify-center items-center m-1 md:p-0 md:pb-10 md:pt-10 p-5">
+    <div className="flex flex-row flex-wrap justify-center items-center m-1 md:p-0 md:pb-5 md:pt-10 p-5">
       <div className="md:ml-2 transform m-2 hover:scale-110 duration-200 ease-in-out text-white text-xl order-2">
         <Email />
       </div>
@@ -62,5 +62,3 @@ function ProjectsLinksContainer() {
     </div>
   )
 }
-
-export default ProjectsLinksContainer

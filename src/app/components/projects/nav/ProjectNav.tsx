@@ -1,9 +1,11 @@
+'use client'
+
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import AnimateNav from './AnimateNav'
+import DrawAnimation from './DrawAnimation'
 
-export default function Nav() {
+export default function ProjectNav() {
   const [lastScrollPosition, setLastScrollPosition] = useState(0)
   const [visible, setVisible] = useState(true)
 
@@ -37,7 +39,7 @@ export default function Nav() {
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center content-center justify-between p-3">
         <a href="/" className="flex items-center rtl:space-x-reverse">
           <div className="">
-            <AnimateNav />
+            <DrawAnimation />
           </div>
         </a>
 

@@ -15,7 +15,7 @@ const animation = {
   },
 }
 
-export default function AnimateNav() {
+export default function DrawAnimation() {
   return (
     <div className=" pl-5 w-full h-full flex justify-center items-center">
       <motion.svg

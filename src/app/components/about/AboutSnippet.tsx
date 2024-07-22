@@ -4,7 +4,7 @@ export default function AboutSnippet() {
   return (
     <div className="flex flex-col bg-slate-200 pb-20 items-center w-screen p-5">
       <div className=" bg-slate-200 text-slate-800">
-        <main className="max-w-5xl">
+        <main className="max-w-4xl">
           <div className="text-left">
             <h2 className="text-2xl font-bold text-slate-800 pt-6 pb-4">
               About Me

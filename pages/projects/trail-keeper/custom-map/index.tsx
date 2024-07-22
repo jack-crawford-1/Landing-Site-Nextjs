@@ -1,20 +1,23 @@
-import '../../../src/app/globals.css'
+import '../../../../src/app/globals.css'
 import { CopyBlock, obsidian } from 'react-code-blocks'
 import Image from 'next/image'
-import Nav from '@/app/components/nav/Nav'
+import ProjectNav from '../../../../src/app/components/projects/nav/ProjectNav'
 import Tooltip from '@/app/components/utils/Tooltip'
-import LinksContainer from '@/app/components/Links/LinksContainer'
+import ProjectFooterLinks from '@/app/components/Links/ProjectFooterLinks'
 
 export default function CustomMaps() {
   return (
     <>
       <div className="w-full">
         <div className="bg-slate-200 text-slate-800 wrap-none">
-          <Nav />
+          <ProjectNav />
           <div className="mx-auto justify-center p-5 max-w-[800px] ">
-            <h1 className="text-5xl font-bold pb-10 pt-10 text-left">
+            <h1 className="text-5xl font-bold pb-2 pt-10 text-left">
               Building a custom map with GeoJSON and Google Maps
             </h1>
+            <h2 className="text-xl font-medium pb-10 text-left">
+              Part of a series of posts on building a hiking app
+            </h2>
 
             <div className="flex items-center pb-5">
               <Tooltip className="text-xs" text="See Source Code On GitHub">
@@ -403,7 +406,7 @@ marker.addListener('click', () => {alert(feature.properties.name)`}
             />
           </div>
         </div>
-        {/* <LinksContainer /> */}
+        <ProjectFooterLinks />
       </div>
     </>
   )
