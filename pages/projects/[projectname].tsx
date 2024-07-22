@@ -5,6 +5,7 @@ import ProjectCard from '@/app/components/projects/ProjectCard'
 import { projectsData } from '@/app/components/projects/ProjectsData'
 import ProjectsLinksContainer from '@/app/components/projects/ProjectsLinksContainer'
 import Nav from '@/app/components/nav/Nav'
+import LinksContainer from '@/app/components/Links/LinksContainer'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = Object.keys(projectsData).map((projectKey) => ({
@@ -34,7 +35,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
   return (
     <>
       <Nav />
-      <div className="p-4 md-pt-10 bg-slate-800 flex justify-center items-center min-h-screen">
+      <div className="p-4 md-pt-10 bg-slate-800 flex justify-center items-center min-h-screen w-full">
         <div className="max-w-4xl w-full">
           <ProjectCard
             projectName={project.projectName}
@@ -55,7 +56,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
             photos={project.photos}
             videoSrc={project.videoSrc}
           />
-          <ProjectsLinksContainer />
+          {/* <LinksContainer /> */}
         </div>
       </div>
     </>

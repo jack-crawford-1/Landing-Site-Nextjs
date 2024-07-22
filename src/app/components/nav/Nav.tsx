@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import Project from '../Links/Project'
-import About from '../Links/About'
+import AnimateNav from './AnimateNav'
 
 export default function Nav() {
   const [lastScrollPosition, setLastScrollPosition] = useState(0)
@@ -31,30 +30,27 @@ export default function Nav() {
 
   return (
     <div
-      className={`bg-slate-800 z-100 w-full h-fit sticky duration-700  transition-all ${
-        visible ? 'top-0' : '-top-40'
+      className={`bg-slate-800 z-50 w-full h-fit sticky duration-700 transition-all ${
+        visible ? 'top-0' : '-top-60'
       } `}
     >
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center content-center justify-between p-3">
-        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <div className="text-6xl font-extrabold lg:pl-48">
-            <span style={{ color: '#87CEFA' }}>J</span>
-            <span style={{ color: '#FFCC33' }}>a</span>
-            <span style={{ color: '#00FF7F' }}>c</span>
-            <span style={{ color: '#FFA343' }}>k</span>
+        <a href="/" className="flex items-center rtl:space-x-reverse">
+          <div className="">
+            <AnimateNav />
           </div>
         </a>
 
-        <ul className="mt-4 flex rounded-lg p-4 font-medium md:mt-0 flex-row md:space-x-8 md:p-0 rtl:space-x-reverse text-white">
+        <ul className="flex rounded-lg p-4 font-medium md:mt-0 flex-row md:space-x-8 md:p-0 rtl:space-x-reverse text-white">
           {currentPath !== '/projects' && (
-            <Link href="/projects">
+            <Link href="/#projects-section">
               <li className="p-2 hover:text-pink-600 hover:scale-125 transform duration-200 ease-in-out">
                 Projects
               </li>
             </Link>
           )}
           {currentPath !== '/about' && (
-            <Link href="/about">
+            <Link href="/#experience-section">
               <li className="p-2 hover:text-pink-600 scale-110 hover:scale-125 transform duration-200 ease-in-out">
                 About
               </li>

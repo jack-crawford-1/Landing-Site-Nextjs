@@ -98,7 +98,7 @@ const ProjectCard: React.FC<Project> = ({
 
       <div className="flex justify-end text-center  items-center pt-5">
         <Tooltip text="Back to Projects">
-          <Link href="/projects">
+          <Link href="/#projects-section">
             <Image
               src="/icons/back-arrow.png"
               alt="back to projects"
