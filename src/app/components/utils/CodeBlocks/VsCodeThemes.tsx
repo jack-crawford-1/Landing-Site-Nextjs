@@ -1,4 +1,4 @@
-export const themes = {
+export const VsCodeThemes = {
   a11yDark: 'a11y-dark',
   a11yLight: 'a11y-light',
   anOldHope: 'an-old-hope',
@@ -39,5 +39,3 @@ export const themes = {
   xt256: 'xt256',
   zenburn: 'zenburn',
 }
-
-export { default as sample } from './codeblocks'
