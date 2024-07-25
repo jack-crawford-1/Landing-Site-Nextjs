@@ -16,7 +16,7 @@ export default function CustomMaps() {
               Building a custom map with GeoJSON and Google Maps
             </h1>
             <h2 className="text-xl font-medium pb-10 text-left">
-              Part of a series of posts on building a hiking app
+              Part 1 of a series of posts on building a hiking app
             </h2>
 
             <div className="flex items-center pb-5">
@@ -363,12 +363,12 @@ marker.addListener('click', () => {alert(feature.properties.name)`}
             </div>
 
             <h2 className="text-3xl font-bold pb-5 pt-10">Up Next</h2>
-            <p className="max-w-[800px]">
+            <p className="max-w-[800px] pb-3">
               The goal of writing about my process, and building the app in the
               first place, was to challenge myself to learn about new techniques
-              and tools, and build something from nothing.{' '}
+              and tools, and build something useful.
             </p>
-            <p className="max-w-[800px]">
+            <p className="max-w-[800px] pb-3">
               In this post, I&apos;ve tried to walk through my process in
               integrating GeoJSON data with Google Maps. By leveraging libraries
               like Proj4 for coordinate conversion and creating a topographical
