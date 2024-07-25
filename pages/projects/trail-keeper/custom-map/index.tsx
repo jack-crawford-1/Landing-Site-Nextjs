@@ -4,6 +4,7 @@ import Image from 'next/image'
 import ProjectNav from '../../../../src/app/components/projects/nav/ProjectNav'
 import Tooltip from '@/app/components/utils/Tooltip'
 import ProjectFooterLinks from '@/app/components/Links/ProjectFooterLinks'
+import Link from 'next/link'
 
 export default function CustomMaps() {
   return (
@@ -404,6 +405,15 @@ marker.addListener('click', () => {alert(feature.properties.name)`}
               height={300}
               className="pb-10 pt-5 rounded-lg"
             />
+          </div>
+
+          <div className="text-center pb-5">
+            <Link
+              href="/projects/trail-keeper/polylines"
+              className="text-slate-800 font-semibold hover:text-blue-600 underline"
+            >
+              Part 2: Converting markers to polylines.
+            </Link>
           </div>
         </div>
         <ProjectFooterLinks />

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import ProjectNav from '@/app/components/projects/nav/ProjectNav'
 import Tooltip from '@/app/components/utils/Tooltip'
 import ProjectFooterLinks from '@/app/components/Links/ProjectFooterLinks'
+import Link from 'next/link'
 
 export default function Polylines() {
   return (
@@ -11,7 +12,7 @@ export default function Polylines() {
       <ProjectNav />
       <div className="mx-auto p-5 max-w-[800px] bg-slate-200">
         <h1 className="text-5xl font-bold pb-2 pt-10 text-left">
-          From Points to Lines
+          From Markers to Polylines
         </h1>
 
         <h2 className="text-xl font-medium pb-3 text-left">
@@ -272,6 +273,14 @@ useEffect(() => {
             className="pt-5 pb-10"
           />
         </div>
+      </div>
+      <div className="text-center pb-5">
+        <Link
+          href="/projects/trail-keeper/custom-map"
+          className=" text-center text-slate-800 font-semibold hover:text-blue-600 underline"
+        >
+          Part 1: Using geoJSON and LINZ data.
+        </Link>
       </div>
       <ProjectFooterLinks />
     </div>
