@@ -1,10 +1,21 @@
-import '../../../app/globals.css'
+import '../../../app/globals.css';
 
 export default function Experience() {
   return (
     <div className=" bg-slate-200 text-slate-800">
       <main className="max-w-3xl">
         <h2 className="text-2xl font-bold mt-8 mb-3">Experience</h2>
+        <h3 className="text-xl font-medium mb-2 mt-4">
+          Technical Integrations Specialist, Trade Me; <br /> Wellington, NZ{' '}
+          <span className="text-md font-medium">(Sep 2024 - Current)</span>
+        </h3>
+        <ul className="pl-4 mb-2 list-disc text-slate-600">
+          <li>
+            Provide technical support and strategic guidance to stakeholders for
+            Trade Me&apos;s Paystation and Afterpay integrations.
+          </li>
+          <li>Cross Functional support</li>
+        </ul>
         <h3 className="text-xl font-medium mb-2 mt-4">
           Student Developer, Dev Academy Aotearoa; <br /> Wellington, NZ{' '}
           <span className="text-md font-medium">(Jan 2024 - May 2024)</span>
@@ -110,5 +121,5 @@ export default function Experience() {
         </ul>
       </main>
     </div>
-  )
+  );
 }

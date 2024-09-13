@@ -30,7 +30,7 @@ export const projectsData: Record<string, Project> = {
   },
 
   minipiano: {
-    projectName: 'Mini Piano using Tone.js',
+    projectName: 'Interactive Mini Piano using Tone.js',
     projectLink: '',
     imageSrc: '/project/piano.png',
     altText: 'Piano app Tone.js with React',
@@ -47,39 +47,76 @@ export const projectsData: Record<string, Project> = {
     videoSrc: '/project/piano.mp4',
   },
 
-  boilerplate: {
-    projectName: 'React / Express Boilerplate: Fullstack',
-    projectLink: 'https://boilerplate.pushed.nz/',
-    imageSrc: '/project/boilerplate.png',
-    altText: 'Fullstack Boilerplate Project',
-    description: `This full-stack app boilerplate leverages modern technologies and best practices to provide a robust foundation for building web applications. The project includes authentication setup using Auth0 and features well-structured API endpoints for both server-side functionality and external data fetching. Internal routes handle server-side logic and responses, while external routes use fetch and superagent to retrieve data from third-party APIs.`,
-    comments: `This was an extension of a template used in a class while at bootcamp. I wanted to be able to quickly spin up a full stack website with React and Express and have it be ready to deploy with a usable interface, authentication, and database. I spent some time making sure the code was clean and well organised so that I could easily update it in the future.`,
-    feature1: `Authentication: Secure user authentication using Auth0, ensuring that user data is protected and that access is granted only to authorised users.`,
-    feature2: ` API: The application features well-structured API interactions, utilising fetch and superagent to handle external data requests.`,
-    feature3: `Database Management: Database operations are managed using Knex and SQLite. This setup allows for data handling and storage.`,
-    feature4: `Reusable Components: The project is built with a modular component structure, which promotes ease of use and maintenance. Components are organised in a way that allows for easy reuse across different parts of the application.`,
-    feature5: `Middleware: Custom middleware functions are included for purposes such as logging. This adds an additional layer of functionality and control over the data flow within the application.`,
-    learnings: `This project was a great opportunity to practice full-stack development and to learn more about the technologies involved in building a modern web application. I gained experience in setting up and managing authentication, working with APIs, and structuring a full-stack project for scalability and maintainability. I had not split certain part of code up in the past so was interesting to see how that could be done into things like controllers vs routes and better use of props. This has made me think more about how I can structure my code in the future and how I can make it more maintainable.`,
-    future: `I would like to add a testing suite to the project to ensure that the code is robust and that future changes do not introduce bugs. I would also like to improve error handling and loading states to provide a better user experience. This will likely morph over time as tech changes and I get more experience in other areas. Animations and transitions would a fun extra and may look at trying out Three.js for some 3D elements.`,
-    technologies: [
-      'React',
-      'Tailwind CSS',
-      'Node.js',
-      'Express',
-      'Auth0',
-      'Knex',
-      'SQLite',
-      'Jsonwebtoken',
-      'Superagent',
-      'TypeScript',
-      'Vite',
-    ],
-    githubLink: 'https://github.com/jack-crawford-1/React-Express-Boilerplate',
-    photos: ['/project/bpdemo1.png', '/project/bpdemo3.png'],
+  pokemon: {
+    projectName: 'Pokemon Battle Game',
+    projectLink: '',
+    imageSrc: '/project/pokemonBattle.png',
+    altText: 'Pokemon Battle Game Project',
+    description:
+      'This project is a simple Pokemon battle game that allows users to choose a Pokemon and battle against a computer opponent. The game uses the PokeAPI to fetch Pokemon data and display it in a user-friendly interface. The battle system is turn-based, with each player selecting an attack and dealing damage based on the Pokemon stats.',
+    comments:
+      'I wanted to create a fun and engaging project that would allow me to practice working with APIs and building interactive games. Pokemon was a big part of my childhood, so it was a natural choice for the theme of the game. I spent some time working on the battle system to make it engaging and strategic, with different attack types and damage calculations based on the Pokemon stats.',
+    learnings:
+      'I learnt a lot about working with external APIs and handling data in a game setting. I spent some time working on the battle logic to make it challenging and fun, with different attack types and damage calculations based on the Pokemon stats. I also wanted to practice using React Router to navigate between different pages and pass data between components. I was interested in using TypeScript to ensure that the data was in the correct format and to help with debugging and refactoring the code.',
+    future:
+      'In the future, I would like to add more Pokemon to the game and introduce more complex battle mechanics, such as status effects and special abilities. I would also like to add a multiplayer mode so that users can battle against each other online. The UI could also be improved with more animations and transitions to make the game more engaging and interactive.',
+    feature1: '',
+    technologies: ['React', 'TypeScript', 'PokeAPI', 'React Router', 'Vite'],
+    githubLink: '',
+    photos: ['/project/pkdemo3.png', '/project/pokemon1.png'],
   },
-}
+  toguesswhom: {
+    projectName: 'To Guess Whom: A "Guess Who" rebuild',
+    projectLink: '',
+    imageSrc: '/project/whoareyou.png',
+    altText: 'To Guess Whom Game Project',
+    description:
+      'Based on Guess Who, this is a simple game allowing users to ask qustions about the attributes of different characters and guess who the character is. The game uses a decision tree to determine the outcome based on the user input. The game features animations and transitions using React Spring to make it more engaging and interactive.',
+    comments:
+      'I wanted to create a fun and interactive project that would allow me to practice working with decision trees and building engaging games. I spent some time working on the game logic to make it challenging and fun, with different questions and branching paths based on the user input. I also wanted to practice using React Spring for animations and transitions to make the game more engaging and interactive.',
+    learnings:
+      'I learnt a lot about working with decision trees and building interactive games. I spent some time working on the game logic to make it challenging and fun, with different questions and branching paths based on the user input. I was interested in using React Spring for animations and transitions to make the game more engaging and interactive. I also wanted to practice using TypeScript to ensure that the data was in the correct format and to help with debugging and refactoring the code.',
+    future:
+      'In the future, I would like to add more famous people to the game and introduce more complex decision trees with multiple branching paths and outcomes. I would also like to add a multiplayer mode so that users can play against each other online. The UI could also be improved with more animations and transitions to make the game more engaging and interactive.',
+    feature1: '',
+    technologies: ['React', 'TypeScript', 'React Spring', 'Vite'],
+    githubLink: '',
+    photos: ['/project/whoareyou2.png', '/project/whoareyou2.png'],
+  },
+};
 
 // old projects
+
+// boilerplate: {
+//   projectName: 'React / Express Boilerplate: Fullstack',
+//   projectLink: 'https://boilerplate.pushed.nz/',
+//   imageSrc: '/project/boilerplate.png',
+//   altText: 'Fullstack Boilerplate Project',
+//   description: `This full-stack app boilerplate leverages modern technologies and best practices to provide a robust foundation for building web applications. The project includes authentication setup using Auth0 and features well-structured API endpoints for both server-side functionality and external data fetching. Internal routes handle server-side logic and responses, while external routes use fetch and superagent to retrieve data from third-party APIs.`,
+//   comments: `This was an extension of a template used in a class while at bootcamp. I wanted to be able to quickly spin up a full stack website with React and Express and have it be ready to deploy with a usable interface, authentication, and database. I spent some time making sure the code was clean and well organised so that I could easily update it in the future.`,
+//   feature1: `Authentication: Secure user authentication using Auth0, ensuring that user data is protected and that access is granted only to authorised users.`,
+//   feature2: ` API: The application features well-structured API interactions, utilising fetch and superagent to handle external data requests.`,
+//   feature3: `Database Management: Database operations are managed using Knex and SQLite. This setup allows for data handling and storage.`,
+//   feature4: `Reusable Components: The project is built with a modular component structure, which promotes ease of use and maintenance. Components are organised in a way that allows for easy reuse across different parts of the application.`,
+//   feature5: `Middleware: Custom middleware functions are included for purposes such as logging. This adds an additional layer of functionality and control over the data flow within the application.`,
+//   learnings: `This project was a great opportunity to practice full-stack development and to learn more about the technologies involved in building a modern web application. I gained experience in setting up and managing authentication, working with APIs, and structuring a full-stack project for scalability and maintainability. I had not split certain part of code up in the past so was interesting to see how that could be done into things like controllers vs routes and better use of props. This has made me think more about how I can structure my code in the future and how I can make it more maintainable.`,
+//   future: `I would like to add a testing suite to the project to ensure that the code is robust and that future changes do not introduce bugs. I would also like to improve error handling and loading states to provide a better user experience. This will likely morph over time as tech changes and I get more experience in other areas. Animations and transitions would a fun extra and may look at trying out Three.js for some 3D elements.`,
+//   technologies: [
+//     'React',
+//     'Tailwind CSS',
+//     'Node.js',
+//     'Express',
+//     'Auth0',
+//     'Knex',
+//     'SQLite',
+//     'Jsonwebtoken',
+//     'Superagent',
+//     'TypeScript',
+//     'Vite',
+//   ],
+//   githubLink: 'https://github.com/jack-crawford-1/React-Express-Boilerplate',
+//   photos: ['/project/bpdemo1.png', '/project/bpdemo3.png'],
+// },
 
 // todoapp: {
 //   projectName: 'Todo App',
