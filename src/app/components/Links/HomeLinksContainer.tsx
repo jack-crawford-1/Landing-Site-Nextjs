@@ -1,31 +1,37 @@
-import Email from './icon-links/Email'
-import Github from './icon-links/Github'
-import CV from './icon-links/CV'
+import Email from './icon-links/Email';
+import Github from './icon-links/Github';
+import CV from './icon-links/CV';
 
 export default function HomeLinksContainer() {
-  const scrollToProjectsSection = (e: { preventDefault: () => void }) => {
-    e.preventDefault()
-    const projectsSection = document.getElementById('projects-section')
+  const scrollToProjectsSection = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    const projectsSection = document.getElementById('projects-section');
     if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth' })
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
     }
-  }
+  };
 
-  const scrollToAboutSection = (e: { preventDefault: () => void }) => {
-    e.preventDefault()
-    const aboutSection = document.getElementById('about-section')
+  const scrollToAboutSection = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    const aboutSection = document.getElementById('about-section');
     if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' })
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
-  }
+  };
 
-  const scrollToExperiencetSection = (e: { preventDefault: () => void }) => {
-    e.preventDefault()
-    const experienceSection = document.getElementById('experience-section')
+  const scrollToExperiencetSection = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    const experienceSection = document.getElementById('experience-section');
     if (experienceSection) {
-      experienceSection.scrollIntoView({ behavior: 'smooth' })
+      experienceSection.scrollIntoView({ behavior: 'smooth' });
     }
-  }
+  };
 
   return (
     <div className="flex flex-row flex-wrap justify-center items-center m-1 md:p-0 md:pb-5 md:pt-10 p-5">
@@ -60,5 +66,5 @@ export default function HomeLinksContainer() {
         Skills
       </a>
     </div>
-  )
+  );
 }
