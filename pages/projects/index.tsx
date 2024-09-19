@@ -11,7 +11,7 @@ export default function Projects() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1140);
+      setIsMobile(window.innerWidth <= 900);
     };
     handleResize();
     window.addEventListener('resize', handleResize);
@@ -29,7 +29,7 @@ export default function Projects() {
             <Link href={`/projects/${project.route}`} key={index}>
               <div className="border-8 border-white w-full sm:w-[400px] md:w-[500px] h-[350px] text-slate-900 flex flex-col rounded-xl overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105">
                 <div className="h-[200px] md:h-[250px] bg-white">
-                  {project.image.endsWith('.mp4') ? (
+                  {project.image.endsWith('.mp4') && !isMobile ? (
                     <video
                       src={project.image}
                       width={500}
@@ -39,7 +39,6 @@ export default function Projects() {
                       loop
                       playsInline
                       muted
-                      controls={!isMobile}
                     />
                   ) : (
                     <Image
