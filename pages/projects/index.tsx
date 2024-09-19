@@ -37,6 +37,7 @@ export default function Projects() {
                       className="object-cover w-full h-full  sm:hide-controls"
                       autoPlay
                       loop
+                      playsInline
                       muted
                       controls={!isMobile}
                     />
