@@ -83,6 +83,24 @@ export const projectsData: Record<string, Project> = {
     githubLink: '',
     photos: ['/project/whoareyou2.png', '/project/whoareyou2.png'],
   },
+  kanban: {
+    projectName: 'Kanban Board',
+    projectLink: '',
+    imageSrc: '/project/kanban.png',
+    altText: 'Kanban Board Project',
+    description:
+      'This is a Kanban Board application built using React, and TypeScript with the dnd-kit library enabling the creation, updating, and deletion of tasks and columns with drag and drop functionality.',
+    comments:
+      'The drag-and-drop functionality is handled by the @dnd-kit library, which provides utilities for implementing drag-and-drop interactions in React applications.',
+    learnings:
+      'I learned how to implement complex drag-and-drop interactions using @dnd-kit and improved my understanding of state management in React. ',
+    future:
+      'I would like to implement a backend to store the data and add user authentication to allow users to save their boards.',
+    feature1: '',
+    technologies: ['React', 'TypeScript', 'TailwincCSS', 'Vite', '@dnd-kit'],
+    githubLink: 'https://github.com/jack-crawford-1/kanban-front-end',
+    videoSrc: '/project/kanban.mp4',
+  },
 };
 
 // old projects
