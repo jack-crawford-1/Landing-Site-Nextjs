@@ -4,8 +4,20 @@ import '../../src/app/globals.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { projects } from '@/app/components/projects/projectsList';
+import { useEffect, useState } from 'react';
 
 export default function Projects() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1140);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <>
       <div className=" p-6 bg-slate-800 pb-20 pt-10">
@@ -22,11 +34,11 @@ export default function Projects() {
                       src={project.image}
                       width={500}
                       height={300}
-                      className="object-cover w-full h-full"
+                      className="object-cover w-full h-full  sm:hide-controls"
                       autoPlay
                       loop
                       muted
-                      controls
+                      controls={!isMobile}
                     />
                   ) : (
                     <Image
