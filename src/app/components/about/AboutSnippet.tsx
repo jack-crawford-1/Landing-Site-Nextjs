@@ -1,10 +1,20 @@
-import '../../../app/globals.css'
+import '../../../app/globals.css';
 
 export default function AboutSnippet() {
+  const scrollToProjectsSection = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    const projectsSection = document.getElementById('projects-section');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="flex flex-col bg-slate-200 pb-20 items-center w-screen p-5">
-      <div className=" bg-slate-200 text-slate-800">
-        <main className="max-w-4xl">
+    <div className="flex flex-col bg-gradient-to-r from-slate-300 via-slate-100 to-slate-300 pb-10 items-center w-screen p-5 font-barlow">
+      <div className="text-slate-800">
+        <main className="max-w-2xl">
           <div className="text-left">
             <h2 className="text-2xl font-bold text-slate-800 pt-6 pb-4">
               About Me
@@ -35,8 +45,18 @@ export default function AboutSnippet() {
               future hikes!
             </p>
           </div>
+
+          <a
+            href="#projects-section"
+            onClick={scrollToProjectsSection}
+            className=" m-3 ml-20"
+          >
+            <button className="px-8 py-3 mt-10 bg-pink-600 text-white font-bold p-2 rounded-lg text-sm  transform hover:scale-110 duration-200 ease-in-out">
+              See Some Of My Projects
+            </button>
+          </a>
         </main>
       </div>
     </div>
-  )
+  );
 }

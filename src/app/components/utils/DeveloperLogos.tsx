@@ -1,12 +1,12 @@
-import Image from 'next/image'
-import '/src/app/globals.css'
+import Image from 'next/image';
+import '/src/app/globals.css';
 
-import Tooltip from '@/app/components/utils/Tooltip'
+import Tooltip from '@/app/components/utils/Tooltip';
 
 export default function DeveloperLogos() {
   return (
     <div>
-      <span className="max-w-[850px] flex flex-row pt-5 pb-5 bg-slate-100 flex-wrap justify-center rounded-xl z-0">
+      <span className="max-w-[850px] flex flex-row bg-slate-100 flex-wrap justify-center rounded-xl z-0">
         <Tooltip text="React.js">
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
@@ -182,5 +182,5 @@ export default function DeveloperLogos() {
         </Tooltip>
       </span>
     </div>
-  )
+  );
 }

@@ -1,40 +1,40 @@
-'use client'
-import '../../src/app/globals.css'
-import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
-import ProjectCard from '@/app/components/projects/ProjectCard'
-import { projectsData } from '@/app/components/projects/ProjectsData'
-import ProjectNav from '../../src/app/components/projects/nav/ProjectNav'
-import ProjectFooterLinks from '@/app/components/Links/ProjectFooterLinks'
+'use client';
+import '../../src/app/globals.css';
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
+import ProjectCard from '@/app/components/projects/ProjectCard';
+import { projectsData } from '@/app/components/projects/ProjectsData';
+import ProjectNav from '../../src/app/components/projects/nav/ProjectNav';
+import ProjectFooterLinks from '@/app/components/Links/ProjectFooterLinks';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = Object.keys(projectsData).map((projectKey) => ({
     params: { projectname: projectKey },
-  }))
+  }));
 
-  return { paths, fallback: false }
-}
+  return { paths, fallback: false };
+};
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const project = projectsData[params?.projectname as string]
+  const project = projectsData[params?.projectname as string];
 
   return {
     props: {
       project,
     },
-  }
-}
+  };
+};
 
-type ProjectPageProps = InferGetStaticPropsType<typeof getStaticProps>
+type ProjectPageProps = InferGetStaticPropsType<typeof getStaticProps>;
 
 const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
   if (!project) {
-    return <div>Project not found</div>
+    return <div>Project not found</div>;
   }
 
   return (
     <>
       <ProjectNav />
-      <div className="p-4 md-pt-10 bg-slate-800 flex justify-center items-center min-h-screen w-full">
+      <div className="p-4 md-pt-10 bg-slate-800 flex justify-center items-center min-h-screen w-full font-barlow">
         <div className="max-w-4xl w-full">
           <ProjectCard
             projectName={project.projectName}
@@ -59,7 +59,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
       </div>
       <ProjectFooterLinks />
     </>
-  )
-}
+  );
+};
 
-export default ProjectPage
+export default ProjectPage;

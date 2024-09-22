@@ -63,7 +63,7 @@ export default function HomeLinksContainer() {
         onClick={scrollToExperiencetSection}
         className="transform hover:scale-110  duration-200 ease-in-out text-white px-2 py-2 rounded text-xl m-2"
       >
-        Skills
+        Experience
       </a>
     </div>
   );

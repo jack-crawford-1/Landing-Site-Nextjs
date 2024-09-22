@@ -1,5 +1,4 @@
-import Tooltip from '../../utils/Tooltip'
-import Image from 'next/image'
+import Tooltip from '../../utils/Tooltip';
 
 function CV() {
   return (
@@ -12,6 +11,6 @@ function CV() {
         </a>
       </Tooltip>
     </>
-  )
+  );
 }
-export default CV
+export default CV;

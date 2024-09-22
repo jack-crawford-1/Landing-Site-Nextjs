@@ -1,6 +1,6 @@
-import Experience from '@/app/components/about/Experience'
-import '../../src/app/globals.css'
-import Skills from '@/app/components/about/Skills'
+import Experience from '@/app/components/about/Experience';
+import '../../src/app/globals.css';
+import Skills from '@/app/components/about/Skills';
 
 export default function AboutSection() {
   return (
@@ -8,5 +8,5 @@ export default function AboutSection() {
       <Skills />
       <Experience />
     </div>
-  )
+  );
 }
