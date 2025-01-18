@@ -57,34 +57,34 @@ export const workExperiences = [
       'Met new business targets through successful prospecting, pipeline management, and sales cycle management.',
     ],
   },
-  {
-    id: 5,
-    name: 'Smudge Publishing',
-    pos: 'Digital Sales Manager',
-    duration: 'Jun 2016 - Nov 2016',
-    title:
-      'Introduced display advertising as a new product to complement the existing print business. Partnered with iconic Australian brands for digital and print advertising to grow sales. Engaged SEO specialists to boost site traffic.',
-    logos: '/logos/smudge.png',
-    bullets: [
-      'Introduced display advertising as a new product to complement the existing print business.',
-      'Partnered with iconic Australian brands for digital and print advertising to grow sales.',
-      'Engaged SEO specialists to boost site traffic.',
-    ],
-  },
-  {
-    id: 6,
-    name: 'Zomato',
-    pos: 'Key Account Manager',
-    duration: 'Jan 2015 - Jun 2016',
-    title:
-      'In a start-up environment as the first sales hire in Australia, exceeded sales targets while recruiting, training, and mentoring the sales team. Planned and implemented on-site marketing events for clients. Managed key accounts.',
-    logos: '/logos/zomato.png',
-    bullets: [
-      'In a start-up environment as the first sales hire in Australia, exceeded sales targets while recruiting, training, and mentoring the sales team.',
-      'Planned and implemented on-site marketing events for clients.',
-      'Managed key accounts.',
-    ],
-  },
+  // {
+  //   id: 5,
+  //   name: 'Smudge Publishing',
+  //   pos: 'Digital Sales Manager',
+  //   duration: 'Jun 2016 - Nov 2016',
+  //   title:
+  //     'Introduced display advertising as a new product to complement the existing print business. Partnered with iconic Australian brands for digital and print advertising to grow sales. Engaged SEO specialists to boost site traffic.',
+  //   logos: '/logos/smudge.png',
+  //   bullets: [
+  //     'Introduced display advertising as a new product to complement the existing print business.',
+  //     'Partnered with iconic Australian brands for digital and print advertising to grow sales.',
+  //     'Engaged SEO specialists to boost site traffic.',
+  //   ],
+  // },
+  // {
+  //   id: 6,
+  //   name: 'Zomato',
+  //   pos: 'Key Account Manager',
+  //   duration: 'Jan 2015 - Jun 2016',
+  //   title:
+  //     'In a start-up environment as the first sales hire in Australia, exceeded sales targets while recruiting, training, and mentoring the sales team. Planned and implemented on-site marketing events for clients. Managed key accounts.',
+  //   logos: '/logos/zomato.png',
+  //   bullets: [
+  //     'In a start-up environment as the first sales hire in Australia, exceeded sales targets while recruiting, training, and mentoring the sales team.',
+  //     'Planned and implemented on-site marketing events for clients.',
+  //     'Managed key accounts.',
+  //   ],
+  // },
   // {
   //   id: 7,
   //   name: 'News Corp Australia',
