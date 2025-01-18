@@ -27,15 +27,23 @@ const Experience = () => {
                   </div>
                   <div className="sm:p-5 px-2.5 py-5 ">
                     <p className="font-bold text-white">{items.name}</p>
-                    <p className="text-sm mb-5  ">
-                      {items.pos} -- <span>{items.duration}</span>
+                    <p className="text-sm mb-5 whitespace-pre-line">
+                      {items.pos} - <span>{items.duration}</span>
                     </p>
                     <p className="pb-5">{items.title}</p>
-                    <ul className="list-disc md:pl-5  ">
+                    <ul className="list-disc md:pl-5">
                       {items.bullets &&
-                        items.bullets.map((bullet, index) => (
-                          <li key={index}>{bullet}</li>
-                        ))}
+                        items.bullets.map((bullet, index) =>
+                          bullet.startsWith('**') ? (
+                            <p key={index} className="font-bold mt-3">
+                              {bullet.replace(/\*\*/g, '')}
+                            </p>
+                          ) : (
+                            <li key={index} className="pl-4">
+                              {bullet}
+                            </li>
+                          )
+                        )}
                     </ul>
                   </div>
                 </div>

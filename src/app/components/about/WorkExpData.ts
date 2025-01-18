@@ -1,21 +1,25 @@
 export const workExperiences = [
-  // {
-  //   id: 1,
-  //   name: 'Trade Me',
-  //   pos: 'Technical Integration Specialist',
-  //   duration: 'Sept 2024 - Present',
-  //   title:
-  //     'Provide technical support to our merchants across all of the supported integration methods on the Trade Me Paystation platform.',
-  //   logos: '/logos/trade_me.png',
-  //   bullets: [
-  //     "Provide technical support and strategic guidance to stakeholders for Trade Me's Paystation and Afterpay integrations.",
-  //     'Cross Functional support',
-  //   ],
-  // },
+  {
+    id: 1,
+    name: 'Trade Me',
+    pos: 'Technical Integration Specialist - Sep 2024 - Present \n Account Manager - Oct 2020 - Dec 2023',
+    duration: '',
+    title:
+      'From Account Manager to Technical Integration Specialist, providing technical support for merchants on Trade Me Paystation while previously managing recruitment and advertising strategies for high-profile businesses.',
+    logos: '/logos/trade_me.png',
+    bullets: [
+      'Provide technical support and strategic guidance for Paystation and Afterpay integrations.',
+      'Cross-functional support across multiple teams.',
+
+      'Managed advertising and recruitment strategies for high-profile businesses.',
+      'Worked with Analytics, Product, and Engineering teams on API integrations.',
+      'Collaborated on projects improving service efficiency and external partnerships.',
+    ],
+  },
   {
     id: 2,
     name: 'Dev Academy Aotearoa',
-    pos: 'Student - Web Developer',
+    pos: 'Full Stack Developer (Bootcamp)',
     duration: 'Jan 2024 - May 2024',
     title:
       'Completed 700+ hours of coding in JavaScript, TypeScript, React, Git, GitHub, and REST APIs. Engaged in an intensive, full-stack web development training programme, emphasising empathy, agile methodologies, and rapid technology adoption.',
@@ -25,20 +29,20 @@ export const workExperiences = [
       'Engaged in an intensive, full-stack web development training programme emphasising empathy, agile methodologies, and rapid technology adoption.',
     ],
   },
-  {
-    id: 3,
-    name: 'Trade Me',
-    pos: 'Account Manager',
-    duration: 'Oct 2020 - Dec 2023',
-    title:
-      'Managed advertising and recruitment strategies for high-profile businesses, and worked with Analytics, Product, and Engineering teams on various projects, including collaborating on the integration of the new Trade Me Jobs API with external partners, improving service efficiency and reach.',
-    logos: '/logos/trade_me.png',
-    bullets: [
-      'Managed advertising and recruitment strategies for high-profile businesses, enhancing client engagement and outcomes.',
-      'Worked with Trade Me Analytics, Product, and Engineering teams on various projects, including collaborating on the integration of the new Trade Me Jobs API with external partners, improving service efficiency and reach.',
-      'Represented Trade Me at industry events, providing insights that shaped business and industry strategies.',
-    ],
-  },
+  // {
+  //   id: 3,
+  //   name: 'Trade Me',
+  //   pos: 'Account Manager',
+  //   duration: 'Oct 2020 - Dec 2023',
+  //   title:
+  //     'Managed advertising and recruitment strategies for high-profile businesses, and worked with Analytics, Product, and Engineering teams on various projects, including collaborating on the integration of the new Trade Me Jobs API with external partners, improving service efficiency and reach.',
+  //   logos: '/logos/trade_me.png',
+  //   bullets: [
+  //     'Managed advertising and recruitment strategies for high-profile businesses, enhancing client engagement and outcomes.',
+  //     'Worked with Trade Me Analytics, Product, and Engineering teams on various projects, including collaborating on the integration of the new Trade Me Jobs API with external partners, improving service efficiency and reach.',
+  //     'Represented Trade Me at industry events, providing insights that shaped business and industry strategies.',
+  //   ],
+  // },
   {
     id: 4,
     name: 'Lead Chat',
@@ -81,17 +85,17 @@ export const workExperiences = [
       'Managed key accounts.',
     ],
   },
-  {
-    id: 7,
-    name: 'News Corp Australia',
-    pos: 'Account Manager',
-    duration: 'Aug 2013 - Jan 2015',
-    title:
-      'Sold print and display advertising across multiple print and digital mastheads. Reacquired lapsed clients with a high win-back rate.',
-    logos: '/logos/news_corp.png',
-    bullets: [
-      'Sold print and display advertising across multiple print and digital mastheads.',
-      'Reacquired lapsed clients with a high win-back rate.',
-    ],
-  },
+  // {
+  //   id: 7,
+  //   name: 'News Corp Australia',
+  //   pos: 'Account Manager',
+  //   duration: 'Aug 2013 - Jan 2015',
+  //   title:
+  //     'Sold print and display advertising across multiple print and digital mastheads. Reacquired lapsed clients with a high win-back rate.',
+  //   logos: '/logos/news_corp.png',
+  //   bullets: [
+  //     'Sold print and display advertising across multiple print and digital mastheads.',
+  //     'Reacquired lapsed clients with a high win-back rate.',
+  //   ],
+  // },
 ];
