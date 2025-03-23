@@ -121,10 +121,6 @@ export const projects = [
         src: '/logos/g-maps.png',
         alt: 'google maps',
       },
-      {
-        src: '/logos/proj4.png',
-        alt: 'proj 4',
-      },
 
       {
         src: '/logos/express.png',

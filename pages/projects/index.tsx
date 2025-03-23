@@ -125,13 +125,25 @@ const Projects = () => {
       <div className="inner-container flex flex-col xl:flex-row 2xl:mt-30 w-full max-w-7xl mx-auto gap-6 xl:gap-12">
         <div className="video-container w-full xl:w-[70%]">
           <div className="inner-video-container w-full border border-white md:border-8 border-0 rounded-md p-3 md:p-0">
-            <video
+            {/* <video
               src={project.image}
               autoPlay
               loop
               muted
-              playsInline
               className="w-full aspect-video max-w-[1200px] border-l-4 border-r-4 md:border-l-8 md:border-r-8 border-black rounded-md"
+            >
+              <source src={project.image} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video> */}
+
+            <video
+              src={project.image}
+              width="800"
+              height="400"
+              autoPlay
+              muted
+              loop
+              className="w-full aspect-video max-w-full md:max-w-[1200px] border-l-4 border-r-4 md:border-l-8 md:border-r-8 border-black rounded-md"
             >
               <source src={project.image} type="video/mp4" />
               Your browser does not support the video tag.

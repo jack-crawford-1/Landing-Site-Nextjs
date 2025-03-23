@@ -1,7 +1,7 @@
-import React from 'react'
-import Image from 'next/image'
-import Tooltip from '../utils/Tooltip'
-import Link from 'next/link'
+import React from 'react';
+import Image from 'next/image';
+import Tooltip from '../utils/Tooltip';
+import Link from 'next/link';
 
 const ProjectCard: React.FC<Project> = ({
   projectName,
@@ -22,10 +22,10 @@ const ProjectCard: React.FC<Project> = ({
   photos,
   videoSrc,
 }) => {
-  const techStack = technologies || []
+  const techStack = technologies || [];
   const features = [feature1, feature2, feature3, feature4, feature5].filter(
     Boolean
-  )
+  );
 
   return (
     <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
@@ -136,7 +136,7 @@ const ProjectCard: React.FC<Project> = ({
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;
