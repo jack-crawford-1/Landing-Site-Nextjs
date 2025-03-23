@@ -88,7 +88,7 @@ export const projects = [
         alt: 'nodemon',
       },
       {
-        src: '/logos/mongodb.png',
+        src: '/logos/MongoDB.png',
         alt: 'MongoDB',
       },
     ],

@@ -88,7 +88,7 @@ export default function DeveloperLogos() {
 
         <Tooltip text="MongoDB">
           <Image
-            src="/logos/mongodb.png"
+            src="/logos/MongoDB.png"
             alt="MongoDB Logo"
             width={50}
             height={50}

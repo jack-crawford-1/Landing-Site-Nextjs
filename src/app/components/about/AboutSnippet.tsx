@@ -12,7 +12,7 @@ export default function AboutSnippet() {
   };
 
   return (
-    <div className="flex flex-col bg-transparent pb-10 items-center w-screen p-5 font-barlow md:mt-[-40px] ">
+    <div className="flex flex-col bg-transparent pb-10 items-center w-full p-5 font-barlow md:mt-[-40px] ">
       <div className="text-slate-200 rounded-md">
         <main className="max-w-2xl p-5 md:p-10 mx-auto">
           <div className="text-left">
