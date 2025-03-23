@@ -129,10 +129,13 @@ const Projects = () => {
               src={project.image}
               autoPlay
               loop
-              playsInline
               muted
+              playsInline
               className="w-full aspect-video max-w-[1200px] border-l-4 border-r-4 md:border-l-8 md:border-r-8 border-black rounded-md"
-            />
+            >
+              <source src={project.image} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 
