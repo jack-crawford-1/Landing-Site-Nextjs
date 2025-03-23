@@ -4,9 +4,9 @@ import Skills from '@/app/components/about/Skills';
 
 export default function AboutSection() {
   return (
-    <div className="flex flex-col bg-slate-200 m-0 items-center w-screen p-5">
+    <div className="flex flex-col  m-0 items-center w-screen p-5">
       <Skills />
-      <Experience />
+      {/* <Experience /> */}
     </div>
   );
 }

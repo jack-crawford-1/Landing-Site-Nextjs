@@ -11,17 +11,22 @@ import AboutSection from '../../pages/about';
 function Home() {
   return (
     <main
-      className={`flex flex-col items-center justify-center p-10 bg-slate-800 text-white overflow-x-hidden `}
+      className={`flex flex-col items-center justify-center p-10 bg-[#070706] text-white bg-fixed  bg-cover bg-center bg-[url(/bg-1.jpg)]`}
     >
-      <div className="max-w-5xl md:min-h-[600px] min-h-[200px] items-center justify-between text-7xl pl-10 md:pl-[150px] md:text-8xl lg:flex font-extrabold  ">
-        <HeroText />
+      <div className="md:min-h-screen h-full flex flex-col justify-center ">
+        <div className="max-w-5xl  min-h-[200px] items-start md:items-end justify-between text-7xl md:pl-[150px] md:text-8xl lg:flex font-extrabold  ">
+          <HeroText />
+        </div>
+
+        <HomeLinksContainer />
       </div>
-      <HomeLinksContainer />
       <div id="about-section">
         <AboutSnippet />
       </div>
       <div id="projects-section">
-        <Projects />
+        <div className="md:mt-[-70px]">
+          <Projects />
+        </div>
       </div>
       <div id="experience-section">
         <AboutSection />

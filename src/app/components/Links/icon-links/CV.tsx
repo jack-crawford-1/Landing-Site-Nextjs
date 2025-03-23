@@ -1,15 +1,17 @@
 import Tooltip from '../../utils/Tooltip';
 import { handleConfetti } from '@/app/hooks/handleConfetti';
+import Image from 'next/image';
 
 function CV() {
   return (
     <>
       <Tooltip className="text-sm" text="as pdf">
         <button
+          className="text-lg hover:scale-110 transform duration-200 ease-in-out flex flex-row items-center"
           onClick={handleConfetti}
-          className="bg-pink-600 text-white font-bold p-2 rounded-lg text-sm transform hover:scale-110 duration-200 ease-in-out"
         >
-          Download CV
+          <Image src="/icons/download.svg" alt="cv" width={20} height={20} />
+          CV
         </button>
       </Tooltip>
     </>
